@@ -1,0 +1,20 @@
+# 実行時生成ファイル
+__pycache__/
+*.pyc
+*.pyo
+
+# ログ・出力・PDFディレクトリ
+logs/
+output/
+pdf/
+
+# 実際の設定ファイル（認証情報を含む可能性あり）
+notify.ini
+
+# Claude Code ローカル設定
+.claude/
+
+# テスト出力
+test_output.txt
+watcher_test.txt
+watcher_test2.txt

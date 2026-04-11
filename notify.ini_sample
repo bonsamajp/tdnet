@@ -1,0 +1,22 @@
+# TDnet 通知設定ファイル
+# enabled = true にした手段だけ通知されます
+
+[desktop]
+# Windowsデスクトップ通知（インストール不要）
+enabled = true
+
+[webhook]
+# Slack / Discord / その他 Webhook
+# Slack:   https://hooks.slack.com/services/XXX/YYY/ZZZ
+# Discord: https://discord.com/api/webhooks/XXX/YYY
+enabled = false
+url =
+
+[email]
+# メール通知（Gmail の場合はアプリパスワードを使用）
+enabled = false
+smtp_host = smtp.gmail.com
+smtp_port = 587
+smtp_user = your@gmail.com
+smtp_password = your_app_password
+to = destination@example.com
