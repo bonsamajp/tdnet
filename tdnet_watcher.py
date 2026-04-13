@@ -128,8 +128,8 @@ def watch(
 
             # 新規行を特定
             if is_first_run:
-                # 初回: PDFはDLしない（ベースライン確立のみ）、キーワード検索は全行対象
-                pdf_rows = []
+                # 初回: 全行をPDF DL対象、キーワード検索は全行対象
+                pdf_rows = rows
                 search_rows = rows
                 known_pdf_urls = {r["pdf_url"] for r in rows if r["pdf_url"]}
                 logger.info("ベースライン記録: %d件", len(known_pdf_urls))
