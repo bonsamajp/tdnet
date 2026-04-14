@@ -105,26 +105,34 @@ class Notifier:
     # ------------------------------------------------------------------
 
     def _desktop(self, title: str, body: str, matches: list[dict]) -> None:
-        # バルーン通知はテキスト制限があるため概要のみ表示
-        summary = body[:200].replace("'", "''").replace('"', '""').replace("\n", " / ")
-        t = title.replace("'", "''")
+        import xml.sax.saxutils as saxutils
 
-        # クリック時に開くURL一覧（PowerShell配列形式）
-        urls = [m["pdf_url"] for m in matches if m.get("pdf_url")]
-        ps_urls = "@(" + ",".join(f"'{u}'" for u in urls) + ")"
+        t_xml = saxutils.escape(title)
+        b_xml = saxutils.escape(body[:200].replace("\n", " / "))
+        url = next((m["pdf_url"] for m in matches if m.get("pdf_url")), "")
+        launch_attr = f' activationType="protocol" launch="{saxutils.escape(url)}"' if url else ""
+
+        xml_str = (
+            f'<toast{launch_attr}>'
+            f'<visual><binding template="ToastGeneric">'
+            f'<text>{t_xml}</text>'
+            f'<text>{b_xml}</text>'
+            f'</binding></visual>'
+            f'</toast>'
+        )
+        ps_xml = xml_str.replace("'", "''")
+
+        # PowerShell の登録済み AppUserModelID を使用（未登録アプリでも通知を表示するため）
+        app_id = "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\WindowsPowerShell\\v1.0\\powershell.exe"
 
         script = (
-            "Add-Type -AssemblyName System.Windows.Forms;"
-            "$n = New-Object System.Windows.Forms.NotifyIcon;"
-            "$n.Icon = [System.Drawing.SystemIcons]::Information;"
-            f"$n.BalloonTipTitle = '{t}';"
-            f"$n.BalloonTipText = '{summary}';"
-            "$n.Visible = $true;"
-            f"$urls = {ps_urls};"
-            "$n.add_BalloonTipClicked({ foreach ($u in $urls) { Start-Process $u } });"
-            "$n.ShowBalloonTip(10000);"
-            "Start-Sleep 11;"
-            "$n.Dispose()"
+            "[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null;"
+            "[Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom.XmlDocument, ContentType = WindowsRuntime] | Out-Null;"
+            "$xml = New-Object Windows.Data.Xml.Dom.XmlDocument;"
+            f"$xml.LoadXml('{ps_xml}');"
+            "$toast = [Windows.UI.Notifications.ToastNotification]::new($xml);"
+            f'$notifier = [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("{app_id}");'
+            "$notifier.Show($toast)"
         )
         try:
             subprocess.Popen(
