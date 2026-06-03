@@ -106,16 +106,16 @@ def fetch_list_page(target_date: str, page: int = 1) -> list[dict]:
     return rows
 
 
-def fetch_all_pages(target_date: str, max_pages: int = 30) -> list[dict]:
-    """指定日付の全ページを取得する。"""
+def fetch_all_pages(target_date: str, max_pages: int = 30, start_page: int = 1) -> list[dict]:
+    """指定日付の全ページを取得する。start_page で開始ページを指定可能。"""
     all_rows = []
-    for page in range(1, max_pages + 1):
+    for page in range(start_page, max_pages + 1):
         rows = fetch_list_page(target_date, page)
         if not rows:
             break
         all_rows.extend(rows)
         time.sleep(0.5)
-    logger.info("合計 %d 件取得", len(all_rows))
+    logger.info("合計 %d 件取得（%dページ目〜）", len(all_rows), start_page)
     return all_rows
 
 

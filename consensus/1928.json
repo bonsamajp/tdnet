@@ -1,0 +1,20 @@
+{
+  "code": "1928",
+  "company": "積水ハウス",
+  "years": {
+    "2027年01月": {
+      "company_forecast": {
+        "sales": 4353000.0,
+        "operating_income": 350000.0,
+        "ordinary_income": 314000.0,
+        "net_income": 218000.0
+      },
+      "consensus_forecast": {
+        "sales": 4357064.0,
+        "operating_income": 358409.0,
+        "ordinary_income": 323009.0,
+        "net_income": 225545.0
+      }
+    }
+  }
+}

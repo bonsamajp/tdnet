@@ -1,0 +1,32 @@
+{
+  "code": "2802",
+  "company": "味の素",
+  "years": {
+    "2027年03月": {
+      "consensus_forecast": {
+        "sales": 1694675.0,
+        "operating_income": 203450.0,
+        "ordinary_income": 204333.0,
+        "net_income": 139008.0,
+        "eps": 145.04,
+        "dividend": 55.0
+      }
+    },
+    "2026年03月": {
+      "company_forecast": {
+        "sales": 1600000.0,
+        "net_income": 130000.0,
+        "eps": 133.56,
+        "dividend": 48.0
+      },
+      "consensus_forecast": {
+        "sales": 1589389.0,
+        "operating_income": 191500.0,
+        "ordinary_income": 188166.0,
+        "net_income": 126774.0,
+        "eps": 132.09,
+        "dividend": 48.0
+      }
+    }
+  }
+}

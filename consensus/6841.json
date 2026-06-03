@@ -1,0 +1,34 @@
+{
+  "code": "6841",
+  "company": "横河電機",
+  "years": {
+    "2027年03月": {
+      "consensus_forecast": {
+        "sales": 627517.0,
+        "operating_income": 96050.0,
+        "ordinary_income": 98533.0,
+        "net_income": 67100.0,
+        "eps": 263.52,
+        "dividend": 85.0
+      }
+    },
+    "2026年03月": {
+      "company_forecast": {
+        "sales": 595000.0,
+        "operating_income": 87000.0,
+        "ordinary_income": 87000.0,
+        "net_income": 59500.0,
+        "eps": 233.15,
+        "dividend": 78.0
+      },
+      "consensus_forecast": {
+        "sales": 595050.0,
+        "operating_income": 87750.0,
+        "ordinary_income": 89300.0,
+        "net_income": 59350.0,
+        "eps": 233.08,
+        "dividend": 76.0
+      }
+    }
+  }
+}

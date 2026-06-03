@@ -1,0 +1,20 @@
+{
+  "code": "9824",
+  "company": "泉州電業",
+  "years": {
+    "2026年10月": {
+      "company_forecast": {
+        "sales": 144000.0,
+        "operating_income": 10700.0,
+        "ordinary_income": 11000.0,
+        "net_income": 7700.0
+      },
+      "consensus_forecast": {
+        "sales": 153000.0,
+        "operating_income": 10950.0,
+        "ordinary_income": 11250.0,
+        "net_income": 7900.0
+      }
+    }
+  }
+}

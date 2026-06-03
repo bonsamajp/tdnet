@@ -1,0 +1,33 @@
+{
+  "code": "6758",
+  "company": "sony",
+  "years": {
+    "2027年03月": {
+      "consensus_forecast": {
+        "sales": 12770824.0,
+        "operating_income": 1637369.0,
+        "ordinary_income": 1667468.0,
+        "net_income": 1226242.0,
+        "eps": 207.68,
+        "dividend": 29.0
+      }
+    },
+    "2026年03月": {
+      "company_forecast": {
+        "sales": 12300000.0,
+        "operating_income": 1540000.0,
+        "ordinary_income": 1550000.0,
+        "net_income": 1130000.0,
+        "dividend": 25.0
+      },
+      "consensus_forecast": {
+        "sales": 12354390.0,
+        "operating_income": 1534031.0,
+        "ordinary_income": 1566284.0,
+        "net_income": 1134035.0,
+        "eps": 192.07,
+        "dividend": 25.0
+      }
+    }
+  }
+}

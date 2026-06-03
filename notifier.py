@@ -1,6 +1,9 @@
 """
 TDnet 通知モジュール
-キーワード検索と各種通知手段（デスクトップ・Webhook・メール）を提供します。
+キーワード検索と各種通知処理（デスクトップ・Webhook・メール）を提供します。
+
+analyzer.py と連携し、登録済み銘柄の開示時には業績比較レポートを
+デスクトップ通知に含めます。
 """
 
 import configparser
@@ -20,8 +23,26 @@ logger = logging.getLogger(__name__)
 # キーワード検索
 # ---------------------------------------------------------------------------
 
+def load_registered_codes(data_dir: str | None = None) -> set[str]:
+    """
+    consensus/ に登録済みの証券コード一覧を返す（4桁・5桁両対応）。
+    これを使うことで keywords.txt への追加なしに登録銘柄を自動監視できる。
+    """
+    if data_dir is None:
+        data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "consensus")
+    if not os.path.exists(data_dir):
+        return set()
+    codes: set[str] = set()
+    for fname in os.listdir(data_dir):
+        if fname.endswith(".json"):
+            code4 = fname[:-5]
+            codes.add(code4)
+            codes.add(code4 + "0")  # TDnetは5桁コード
+    return codes
+
+
 def load_keywords(path: str) -> list[str]:
-    """keywords.txt を読み込む。# 始まり行と空行は無視。"""
+    """keywords.txt を読み込む。頭末の空白と空行は無視。"""
     if not os.path.exists(path):
         logger.warning("キーワードファイルが見つかりません: %s", path)
         return []
@@ -31,22 +52,34 @@ def load_keywords(path: str) -> list[str]:
 
 
 def _normalize(text: str) -> str:
-    """全角英数字・記号を半角に統一する（比較用）。"""
+    """全角英数字・記号を半角に統一する（検索用）。"""
     return unicodedata.normalize("NFKC", text)
 
 
-def search(rows: list[dict], keywords: list[str]) -> list[dict]:
+def search(
+    rows: list[dict],
+    keywords: list[str],
+    registered_codes: set[str] | None = None,
+) -> list[dict]:
     """
-    rows の中からキーワードにマッチした行を返す。
-    会社名・表題を対象に部分一致で検索。
+    rows の中からマッチした行を返す。
 
-    カンマ区切りで AND 条件（例: 「決算短信,フジクラ」→両方含む行にマッチ）。
-    同一行に複数キーワードが当たっても1件として扱う。
+    優先順①: registered_codes に含まれる証券コードは自動マッチ
+             （本決算・四半期・業績予想修正すべてをキーワード登録なしで検知）
+    優先順②: keywords.txt によるキーワードマッチ
+             （未登録銘柄の監視や特定ワードを含む全開示の監視に使用）
+
+    カンマ区切りで AND 条件。同一行に複数キーワードが当たっても1件として扱う。
     """
-    if not keywords:
-        return []
     matches = []
     for row in rows:
+        # ① 登録銘柄はコードで自動マッチ
+        if registered_codes and row.get("code") in registered_codes:
+            matches.append({**row, "matched_keyword": "(登録銘柄)"})
+            continue
+        # ② keywords.txt によるキーワードマッチ
+        if not keywords:
+            continue
         text = _normalize(row.get("company", "") + " " + row.get("title", ""))
         for kw_line in keywords:
             conditions = [_normalize(k.strip()) for k in kw_line.split(",") if k.strip()]
@@ -54,6 +87,165 @@ def search(rows: list[dict], keywords: list[str]) -> list[dict]:
                 matches.append({**row, "matched_keyword": kw_line})
                 break
     return matches
+
+
+# ---------------------------------------------------------------------------
+# 業績分析（analyzer.py 連携）
+# ---------------------------------------------------------------------------
+
+def _try_analyze(match: dict) -> str | None:
+    """
+    analyzer.py が存在すれば analyze() を呼び出してレポートを返す。
+    存在しない・エラーの場合は None を返す（通知は継続する）。
+    """
+    try:
+        import analyzer
+        return analyzer.analyze(match)
+    except ImportError:
+        logger.debug("analyzer.py が見つかりません。業績比較をスキップします。")
+        return None
+    except Exception as e:
+        logger.error("analyzer エラー: %s", e)
+        return None
+
+
+# ---------------------------------------------------------------------------
+# 業績レポートサマリー（トースト通知用）
+# ---------------------------------------------------------------------------
+
+def _compact_report_summary(report: str) -> tuple[str, str, str]:
+    """
+    報告種別を自動判定してトースト用3行サマリーを返す。
+      📊 業績比較レポート → 本決算: 会社予想比・コンセ比・翌期
+      📈 XQ累計実績      → 四半期: 前年同期比・会予進捗・コンセ進捗
+      🔄 業績予想修正     → 修正率・コンセ比
+    """
+    if report.startswith("📈"):
+        return _compact_quarterly_summary(report)
+    if report.startswith("🔄"):
+        return _compact_revision_summary(report)
+    return _compact_annual_summary(report)
+
+
+def _compact_annual_summary(report: str) -> tuple[str, str, str]:
+    """本決算: (会社予想比行, コンセンサス比行, 翌期行)"""
+    import re
+    short_labels = {"売上高": "売上", "営業利益": "営利", "経常利益": "経常", "純利益": "純利"}
+    score_map    = {"売上": 3, "営利": 1, "経常": 1, "純利": 2}
+
+    sections         = re.split(r'(?=📅)', report)
+    current_section  = sections[0]
+    forecast_section = sections[1] if len(sections) > 1 else ""
+
+    def _extract(section: str, col_index: int) -> list[str]:
+        parts = []
+        for line in section.splitlines():
+            s = line.strip()
+            for full, short in short_labels.items():
+                if s.startswith(full):
+                    pcts = re.findall(r'[+\-]\d+\.\d+%', s)
+                    if col_index < len(pcts):
+                        pct  = pcts[col_index]
+                        sign = "△" if pct.startswith("+") else "▼"
+                        parts.append(f"{short}{sign}{pct[1:]}")
+                    break
+        return parts
+
+    def _score(parts: list[str]) -> int:
+        s = 0
+        for p in parts:
+            for lbl, pts in score_map.items():
+                if p.startswith(lbl):
+                    s += pts if "△" in p else -pts
+                    break
+        return s
+
+    def _line(prefix: str, parts: list[str]) -> str:
+        if not parts:
+            return ""
+        sc = _score(parts)
+        return f"{prefix}  " + "  ".join(parts) + f"  【{'+' if sc >= 0 else ''}{sc}】"
+
+    return (
+        _line("会予", _extract(current_section, 0)),
+        _line("市場", _extract(current_section, 1)),
+        _line("翌期", _extract(forecast_section, 0)),
+    )
+
+
+def _compact_quarterly_summary(report: str) -> tuple[str, str, str]:
+    """四半期: (前年同期比行, 会予進捗行, コンセ進捗行)"""
+    import re
+    short_labels = {"売上高": "売上", "営業利益": "営利", "経常利益": "経常", "純利益": "純利"}
+
+    def _extract_col(col_index: int) -> list[str]:
+        parts = []
+        for line in report.splitlines():
+            s = line.strip()
+            for full, short in short_labels.items():
+                if s.startswith(full):
+                    # 数値列: 累計実績 前年同期比 会予進捗 コンセ進捗
+                    nums = re.findall(r'[+\-]?\d+\.?\d*%', s)
+                    if col_index < len(nums):
+                        raw  = nums[col_index]
+                        if "+" in raw or "-" in raw:
+                            sign = "△" if raw.startswith("+") else "▼"
+                            parts.append(f"{short}{sign}{raw.lstrip('+-')}")
+                        else:
+                            parts.append(f"{short}{raw}")
+                    break
+        return parts
+
+    def _line(prefix: str, parts: list[str]) -> str:
+        return (f"{prefix}  " + "  ".join(parts)) if parts else ""
+
+    return (
+        _line("前年", _extract_col(0)),   # 前年同期比
+        _line("会進", _extract_col(1)),   # 会社予想進捗
+        _line("コン", _extract_col(2)),   # コンセンサス進捗
+    )
+
+
+def _compact_revision_summary(report: str) -> tuple[str, str, str]:
+    """業績予想修正: (修正率行, コンセ比行, '')"""
+    import re
+    short_labels = {"売上高": "売上", "営業利益": "営利", "経常利益": "経常", "純利益": "純利"}
+    score_map    = {"売上": 3, "営利": 1, "経常": 1, "純利": 2}
+
+    def _extract_col(col_index: int) -> list[str]:
+        parts = []
+        for line in report.splitlines():
+            s = line.strip()
+            for full, short in short_labels.items():
+                if s.startswith(full):
+                    pcts = re.findall(r'[+\-]\d+\.\d+%', s)
+                    if col_index < len(pcts):
+                        pct  = pcts[col_index]
+                        sign = "△" if pct.startswith("+") else "▼"
+                        parts.append(f"{short}{sign}{pct[1:]}")
+                    break
+        return parts
+
+    def _score(parts: list[str]) -> int:
+        s = 0
+        for p in parts:
+            for lbl, pts in score_map.items():
+                if p.startswith(lbl):
+                    s += pts if "△" in p else -pts
+                    break
+        return s
+
+    def _line(prefix: str, parts: list[str]) -> str:
+        if not parts:
+            return ""
+        sc = _score(parts)
+        return f"{prefix}  " + "  ".join(parts) + f"  【{'+' if sc >= 0 else ''}{sc}】"
+
+    return (
+        _line("修正", _extract_col(0)),   # 修正率
+        _line("市場", _extract_col(1)),   # コンセンサス比
+        "",
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -72,27 +264,39 @@ class Notifier:
         return self._cfg.getboolean(section, "enabled", fallback=False)
 
     def send(self, matches: list[dict]) -> None:
-        """マッチした行一覧を各通知手段へ送信する。"""
+        """マッチした行一覧を各通知先へ送信する。"""
         if not matches:
             return
 
-        # デスクトップ通知: 1件ずつバルーンを出す（クリックで個別PDF表示）
+        analysis_results: dict[str, str] = {}
+        for m in matches:
+            report = _try_analyze(m)
+            if report:
+                analysis_results[m.get("code", "")] = report
+                logger.info("業績比較レポート生成: %s", m.get("code", ""))
+
         if self._enabled("desktop"):
             for m in matches:
                 title = f"TDnet: {m['company']}  [{m['matched_keyword']}]"
-                body = f"{m['time']}  {m['code']}\n{m['title']}"
-                self._desktop(title, body, [m])
+                body  = f"{m['time']}  {m['code']}\n{m['title']}"
+                report = analysis_results.get(m.get("code", ""))
+                self._desktop(title, body, [m], report=report)
 
-        # Webhook・メール: まとめて1通
         summary_title = f"TDnet アラート: {len(matches)}件のキーワードマッチ"
-        summary_lines = [
-            f"[{r['time']}] {r['code']} {r['company']}"
-            f"\n  表題: {r['title']}"
-            f"\n  キーワード: {r['matched_keyword']}"
-            f"\n  URL: {r['pdf_url']}"
-            for r in matches
-        ]
-        summary_body = "\n\n".join(summary_lines)
+        summary_parts = []
+        for r in matches:
+            part = (
+                f"[{r['time']}] {r['code']} {r['company']}"
+                f"\n  タイトル: {r['title']}"
+                f"\n  キーワード: {r['matched_keyword']}"
+                f"\n  URL: {r['pdf_url']}"
+            )
+            report = analysis_results.get(r.get("code", ""))
+            if report:
+                part += f"\n\n{report}"
+            summary_parts.append(part)
+
+        summary_body = "\n\n" + ("─" * 40 + "\n\n").join(summary_parts)
 
         if self._enabled("webhook"):
             self._webhook(summary_title, summary_body, matches)
@@ -104,7 +308,7 @@ class Notifier:
     # デスクトップ通知（Windows・インストール不要）
     # ------------------------------------------------------------------
 
-    def _desktop(self, title: str, body: str, matches: list[dict]) -> None:
+    def _desktop(self, title: str, body: str, matches: list[dict], report: str | None = None) -> None:
         import xml.sax.saxutils as saxutils
 
         t_xml = saxutils.escape(title)
@@ -112,17 +316,24 @@ class Notifier:
         url = next((m["pdf_url"] for m in matches if m.get("pdf_url")), "")
         launch_attr = f' activationType="protocol" launch="{saxutils.escape(url)}"' if url else ""
 
+        extra_xml = ""
+        if report:
+            c_line, n_line, f_line = _compact_report_summary(report)
+            for line in (c_line, n_line, f_line):
+                if line:
+                    extra_xml += f"<text>{saxutils.escape(line)}</text>"
+
         xml_str = (
             f'<toast{launch_attr}>'
             f'<visual><binding template="ToastGeneric">'
             f'<text>{t_xml}</text>'
             f'<text>{b_xml}</text>'
+            f'{extra_xml}'
             f'</binding></visual>'
             f'</toast>'
         )
         ps_xml = xml_str.replace("'", "''")
 
-        # PowerShell の登録済み AppUserModelID を使用（未登録アプリでも通知を表示するため）
         app_id = "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\WindowsPowerShell\\v1.0\\powershell.exe"
 
         script = (
@@ -139,7 +350,7 @@ class Notifier:
                 ["powershell", "-WindowStyle", "Hidden", "-NonInteractive", "-Command", script],
                 creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
             )
-            logger.info("デスクトップ通知送信（クリックでPDF表示）")
+            logger.info("デスクトップ通知送信（クリックでPDF表示）%s", "＋業績レポート" if report else "")
         except Exception as e:
             logger.error("デスクトップ通知エラー: %s", e)
 
@@ -153,7 +364,6 @@ class Notifier:
             logger.warning("Webhook URL が設定されていません")
             return
 
-        # Slack と Discord は両方 {"text": "..."} で動作する
         payload = json.dumps({"text": f"*{title}*\n```{body}```"}).encode("utf-8")
         req = urllib.request.Request(
             url,
@@ -173,11 +383,11 @@ class Notifier:
     # ------------------------------------------------------------------
 
     def _email(self, title: str, body: str) -> None:
-        host = self._cfg.get("email", "smtp_host", fallback="")
-        port = self._cfg.getint("email", "smtp_port", fallback=587)
-        user = self._cfg.get("email", "smtp_user", fallback="")
+        host     = self._cfg.get("email", "smtp_host",     fallback="")
+        port     = self._cfg.getint("email", "smtp_port",  fallback=587)
+        user     = self._cfg.get("email", "smtp_user",     fallback="")
         password = self._cfg.get("email", "smtp_password", fallback="")
-        to = self._cfg.get("email", "to", fallback="")
+        to       = self._cfg.get("email", "to",            fallback="")
 
         if not all([host, user, password, to]):
             logger.warning("メール設定が不完全です")
@@ -185,8 +395,8 @@ class Notifier:
 
         msg = MIMEText(body, "plain", "utf-8")
         msg["Subject"] = title
-        msg["From"] = user
-        msg["To"] = to
+        msg["From"]    = user
+        msg["To"]      = to
 
         try:
             with smtplib.SMTP(host, port, timeout=15) as smtp:

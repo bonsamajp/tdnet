@@ -1,0 +1,31 @@
+{
+  "code": "2593",
+  "company": "伊藤園",
+  "years": {
+    "2027年04月": {
+      "consensus_forecast": {
+        "sales": 512750.0,
+        "operating_income": 22900.0,
+        "ordinary_income": 23400.0,
+        "net_income": 12700.0,
+        "eps": 150.61
+      }
+    },
+    "2026年04月": {
+      "company_forecast": {
+        "sales": 497800.0,
+        "operating_income": 21600.0,
+        "ordinary_income": 23200.0,
+        "net_income": 3400.0,
+        "eps": 26.29
+      },
+      "consensus_forecast": {
+        "sales": 501250.0,
+        "operating_income": 20550.0,
+        "ordinary_income": 22000.0,
+        "net_income": 1950.0,
+        "eps": 23.13
+      }
+    }
+  }
+}
