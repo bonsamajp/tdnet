@@ -1,0 +1,20 @@
+{
+  "code": "9468",
+  "company": "KADOKAWA",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 300300.0,
+        "operating_income": 10100.0,
+        "ordinary_income": 12000.0,
+        "net_income": 5800.0
+      },
+      "consensus_forecast": {
+        "sales": 299744.0,
+        "operating_income": 13846.0,
+        "ordinary_income": 15542.0,
+        "net_income": 8036.0
+      }
+    }
+  }
+}

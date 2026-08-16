@@ -1,0 +1,20 @@
+{
+  "code": "3099",
+  "company": "三越伊勢丹ホールディングス",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 560000.0,
+        "operating_income": 81500.0,
+        "ordinary_income": 80000.0,
+        "net_income": 61500.0
+      },
+      "consensus_forecast": {
+        "sales": 563594.0,
+        "operating_income": 83693.0,
+        "ordinary_income": 84033.0,
+        "net_income": 62840.0
+      }
+    }
+  }
+}

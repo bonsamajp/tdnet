@@ -1,0 +1,20 @@
+{
+  "code": "7267",
+  "company": "本田",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 23150000.0,
+        "operating_income": 500000.0,
+        "ordinary_income": 500000.0,
+        "net_income": 260000.0
+      },
+      "consensus_forecast": {
+        "sales": 23271775.0,
+        "operating_income": 587525.0,
+        "ordinary_income": 657359.0,
+        "net_income": 392264.0
+      }
+    }
+  }
+}

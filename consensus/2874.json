@@ -1,0 +1,20 @@
+{
+  "code": "2874",
+  "company": "横浜冷凍",
+  "years": {
+    "2026年09月": {
+      "company_forecast": {
+        "sales": 125000.0,
+        "operating_income": 7000.0,
+        "ordinary_income": 6400.0,
+        "net_income": 4800.0
+      },
+      "consensus_forecast": {
+        "sales": 126000.0,
+        "operating_income": 7067.0,
+        "ordinary_income": 6467.0,
+        "net_income": 4867.0
+      }
+    }
+  }
+}

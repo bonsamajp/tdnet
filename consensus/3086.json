@@ -1,0 +1,20 @@
+{
+  "code": "3086",
+  "company": "Jフロント",
+  "years": {
+    "2027年02月": {
+      "company_forecast": {
+        "sales": 469000.0,
+        "operating_income": 47000.0,
+        "ordinary_income": 42000.0,
+        "net_income": 29000.0
+      },
+      "consensus_forecast": {
+        "sales": 458633.0,
+        "operating_income": 48617.0,
+        "ordinary_income": 43899.0,
+        "net_income": 30349.0
+      }
+    }
+  }
+}

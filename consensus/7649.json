@@ -1,0 +1,20 @@
+{
+  "code": "7649",
+  "company": "スギ",
+  "years": {
+    "2027年02月": {
+      "company_forecast": {
+        "sales": 1092000.0,
+        "operating_income": 54000.0,
+        "ordinary_income": 55000.0,
+        "net_income": 32800.0
+      },
+      "consensus_forecast": {
+        "sales": 1099866.0,
+        "operating_income": 53725.0,
+        "ordinary_income": 55100.0,
+        "net_income": 33100.0
+      }
+    }
+  }
+}

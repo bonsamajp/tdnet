@@ -1,0 +1,19 @@
+{
+  "code": "3003",
+  "company": "ヒューリック",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "operating_income": 210000.0,
+        "ordinary_income": 185000.0,
+        "net_income": 121000.0
+      },
+      "consensus_forecast": {
+        "sales": 879229.0,
+        "operating_income": 210001.0,
+        "ordinary_income": 186806.0,
+        "net_income": 123565.0
+      }
+    }
+  }
+}

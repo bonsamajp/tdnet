@@ -1,0 +1,20 @@
+{
+  "code": "6323",
+  "company": "ローツェ",
+  "years": {
+    "2027年02月": {
+      "company_forecast": {
+        "sales": 159021.0,
+        "operating_income": 38112.0,
+        "ordinary_income": 38241.0,
+        "net_income": 27809.0
+      },
+      "consensus_forecast": {
+        "sales": 160670.0,
+        "operating_income": 40219.0,
+        "ordinary_income": 40048.0,
+        "net_income": 29435.0
+      }
+    }
+  }
+}

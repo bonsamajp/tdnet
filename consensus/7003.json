@@ -1,0 +1,20 @@
+{
+  "code": "7003",
+  "company": "三井E&S",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 370000.0,
+        "operating_income": 32000.0,
+        "ordinary_income": 37000.0,
+        "net_income": 30000.0
+      },
+      "consensus_forecast": {
+        "sales": 376153.0,
+        "operating_income": 42516.0,
+        "ordinary_income": 47450.0,
+        "net_income": 36150.0
+      }
+    }
+  }
+}

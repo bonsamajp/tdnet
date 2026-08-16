@@ -1,0 +1,20 @@
+{
+  "code": "9048",
+  "company": "名古屋鉄道",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 734000.0,
+        "operating_income": 45000.0,
+        "ordinary_income": 47000.0,
+        "net_income": 39000.0
+      },
+      "consensus_forecast": {
+        "sales": 713100.0,
+        "operating_income": 45750.0,
+        "ordinary_income": 47250.0,
+        "net_income": 35900.0
+      }
+    }
+  }
+}

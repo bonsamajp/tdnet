@@ -1,0 +1,20 @@
+{
+  "code": "3397",
+  "company": "トリドールホールディングス",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 287000.0,
+        "operating_income": 17000.0,
+        "ordinary_income": 14000.0,
+        "net_income": 7000.0
+      },
+      "consensus_forecast": {
+        "sales": 286750.0,
+        "operating_income": 17500.0,
+        "ordinary_income": 15075.0,
+        "net_income": 7625.0
+      }
+    }
+  }
+}

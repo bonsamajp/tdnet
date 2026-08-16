@@ -1,0 +1,19 @@
+{
+  "code": "4902",
+  "company": "コニカミノルタ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1105000.0,
+        "operating_income": 50000.0,
+        "net_income": 28500.0
+      },
+      "consensus_forecast": {
+        "sales": 1079112.0,
+        "operating_income": 51983.0,
+        "ordinary_income": 45780.0,
+        "net_income": 29792.0
+      }
+    }
+  }
+}

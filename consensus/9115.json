@@ -1,0 +1,14 @@
+{
+  "code": "9115",
+  "company": "明海",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 61600.0,
+        "operating_income": 6000.0,
+        "ordinary_income": 5000.0,
+        "net_income": 2100.0
+      }
+    }
+  }
+}

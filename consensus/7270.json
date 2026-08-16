@@ -1,0 +1,20 @@
+{
+  "code": "7270",
+  "company": "SUBARU",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 5200000.0,
+        "operating_income": 150000.0,
+        "ordinary_income": 180000.0,
+        "net_income": 130000.0
+      },
+      "consensus_forecast": {
+        "sales": 5161844.0,
+        "operating_income": 182010.0,
+        "ordinary_income": 223793.0,
+        "net_income": 161231.0
+      }
+    }
+  }
+}

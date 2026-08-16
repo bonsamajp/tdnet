@@ -1,0 +1,20 @@
+{
+  "code": "4631",
+  "company": "DIC",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 1100000.0,
+        "operating_income": 56000.0,
+        "ordinary_income": 48000.0,
+        "net_income": 33000.0
+      },
+      "consensus_forecast": {
+        "sales": 1128167.0,
+        "operating_income": 62667.0,
+        "ordinary_income": 55600.0,
+        "net_income": 38167.0
+      }
+    }
+  }
+}

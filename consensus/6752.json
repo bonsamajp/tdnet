@@ -1,0 +1,20 @@
+{
+  "code": "6752",
+  "company": "パナソニック",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 7600000.0,
+        "operating_income": 550000.0,
+        "ordinary_income": 550000.0,
+        "net_income": 420000.0
+      },
+      "consensus_forecast": {
+        "sales": 7804941.0,
+        "operating_income": 587091.0,
+        "ordinary_income": 603778.0,
+        "net_income": 458944.0
+      }
+    }
+  }
+}

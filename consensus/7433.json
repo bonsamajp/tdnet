@@ -1,0 +1,14 @@
+{
+  "code": "7433",
+  "company": "伯東",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 227500.0,
+        "operating_income": 9600.0,
+        "ordinary_income": 8600.0,
+        "net_income": 6400.0
+      }
+    }
+  }
+}

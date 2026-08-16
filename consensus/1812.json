@@ -1,0 +1,20 @@
+{
+  "code": "1812",
+  "company": "鹿島",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2900000.0,
+        "operating_income": 200000.0,
+        "ordinary_income": 206000.0,
+        "net_income": 170000.0
+      },
+      "consensus_forecast": {
+        "sales": 2953743.0,
+        "operating_income": 216800.0,
+        "ordinary_income": 225057.0,
+        "net_income": 184429.0
+      }
+    }
+  }
+}

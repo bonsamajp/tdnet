@@ -1,0 +1,20 @@
+{
+  "code": "4568",
+  "company": "第一三共",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2280000.0,
+        "operating_income": 315000.0,
+        "ordinary_income": 329000.0,
+        "net_income": 260000.0
+      },
+      "consensus_forecast": {
+        "sales": 2334311.0,
+        "operating_income": 341497.0,
+        "ordinary_income": 355197.0,
+        "net_income": 283247.0
+      }
+    }
+  }
+}

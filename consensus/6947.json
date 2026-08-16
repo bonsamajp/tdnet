@@ -1,0 +1,20 @@
+{
+  "code": "6947",
+  "company": "図研",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 46000.0,
+        "operating_income": 6700.0,
+        "ordinary_income": 7800.0,
+        "net_income": 5700.0
+      },
+      "consensus_forecast": {
+        "sales": 45900.0,
+        "operating_income": 6300.0,
+        "ordinary_income": 7000.0,
+        "net_income": 5000.0
+      }
+    }
+  }
+}

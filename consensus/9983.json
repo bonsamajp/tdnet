@@ -1,0 +1,20 @@
+{
+  "code": "9983",
+  "company": "ファースト",
+  "years": {
+    "2026年08月": {
+      "company_forecast": {
+        "sales": 3900000.0,
+        "operating_income": 700000.0,
+        "ordinary_income": 740000.0,
+        "net_income": 480000.0
+      },
+      "consensus_forecast": {
+        "sales": 3919607.0,
+        "operating_income": 714413.0,
+        "ordinary_income": 765548.0,
+        "net_income": 500391.0
+      }
+    }
+  }
+}

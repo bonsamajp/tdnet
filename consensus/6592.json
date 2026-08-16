@@ -1,0 +1,20 @@
+{
+  "code": "6592",
+  "company": "マブチモーター",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 213000.0,
+        "operating_income": 26000.0,
+        "ordinary_income": 29200.0,
+        "net_income": 21500.0
+      },
+      "consensus_forecast": {
+        "sales": 210557.0,
+        "operating_income": 25313.0,
+        "ordinary_income": 28559.0,
+        "net_income": 20720.0
+      }
+    }
+  }
+}

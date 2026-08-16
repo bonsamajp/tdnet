@@ -1,0 +1,18 @@
+{
+  "code": "5344",
+  "company": "MARUWA",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 84100.0,
+        "operating_income": 29700.0
+      },
+      "consensus_forecast": {
+        "sales": 88950.0,
+        "operating_income": 34275.0,
+        "ordinary_income": 34750.0,
+        "net_income": 24530.0
+      }
+    }
+  }
+}

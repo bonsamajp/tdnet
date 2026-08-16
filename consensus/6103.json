@@ -1,0 +1,20 @@
+{
+  "code": "6103",
+  "company": "オークマ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 245000.0,
+        "operating_income": 19000.0,
+        "ordinary_income": 19500.0,
+        "net_income": 13000.0
+      },
+      "consensus_forecast": {
+        "sales": 251950.0,
+        "operating_income": 20600.0,
+        "ordinary_income": 21900.0,
+        "net_income": 15342.0
+      }
+    }
+  }
+}

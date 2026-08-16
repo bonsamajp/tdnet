@@ -1,0 +1,20 @@
+{
+  "code": "8697",
+  "company": "日本取引所",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 205000.0,
+        "operating_income": 115000.0,
+        "ordinary_income": 116000.0,
+        "net_income": 77500.0
+      },
+      "consensus_forecast": {
+        "sales": 232800.0,
+        "operating_income": 132950.0,
+        "ordinary_income": 138367.0,
+        "net_income": 92467.0
+      }
+    }
+  }
+}

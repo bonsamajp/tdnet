@@ -1,0 +1,20 @@
+{
+  "code": "6436",
+  "company": "アマノ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 184000.0,
+        "operating_income": 24000.0,
+        "ordinary_income": 25600.0,
+        "net_income": 17600.0
+      },
+      "consensus_forecast": {
+        "sales": 185465.0,
+        "operating_income": 24345.0,
+        "ordinary_income": 25925.0,
+        "net_income": 17825.0
+      }
+    }
+  }
+}

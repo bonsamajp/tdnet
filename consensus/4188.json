@@ -1,0 +1,20 @@
+{
+  "code": "4188",
+  "company": "三菱ケミカル",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 3800000.0,
+        "operating_income": 300000.0,
+        "ordinary_income": 270000.0,
+        "net_income": 127000.0
+      },
+      "consensus_forecast": {
+        "sales": 3959897.0,
+        "operating_income": 293274.0,
+        "ordinary_income": 264431.0,
+        "net_income": 119362.0
+      }
+    }
+  }
+}

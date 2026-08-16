@@ -1,0 +1,17 @@
+{
+  "code": "7186",
+  "company": "横浜フィナンシャル",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "ordinary_income": 191500.0,
+        "net_income": 129000.0
+      },
+      "consensus_forecast": {
+        "sales": 566700.0,
+        "ordinary_income": 198324.0,
+        "net_income": 135142.0
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "code": "7269",
+  "company": "スズキ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 6800000.0,
+        "operating_income": 570000.0,
+        "ordinary_income": 660000.0,
+        "net_income": 380000.0
+      },
+      "consensus_forecast": {
+        "sales": 6797606.0,
+        "operating_income": 594426.0,
+        "ordinary_income": 691720.0,
+        "net_income": 396908.0
+      }
+    }
+  }
+}

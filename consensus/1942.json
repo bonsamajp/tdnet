@@ -1,0 +1,20 @@
+{
+  "code": "1942",
+  "company": "関電工",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 780000.0,
+        "operating_income": 90000.0,
+        "ordinary_income": 90500.0,
+        "net_income": 65000.0
+      },
+      "consensus_forecast": {
+        "sales": 788313.0,
+        "operating_income": 95188.0,
+        "ordinary_income": 96763.0,
+        "net_income": 69488.0
+      }
+    }
+  }
+}

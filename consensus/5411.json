@@ -1,0 +1,19 @@
+{
+  "code": "5411",
+  "company": "JFE",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 4800000.0,
+        "ordinary_income": 190000.0,
+        "net_income": 150000.0
+      },
+      "consensus_forecast": {
+        "sales": 4850911.0,
+        "operating_income": 204100.0,
+        "ordinary_income": 171492.0,
+        "net_income": 129136.0
+      }
+    }
+  }
+}

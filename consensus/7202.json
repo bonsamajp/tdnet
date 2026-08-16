@@ -1,0 +1,20 @@
+{
+  "code": "7202",
+  "company": "いすず",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 3700000.0,
+        "operating_income": 260000.0,
+        "ordinary_income": 260000.0,
+        "net_income": 160000.0
+      },
+      "consensus_forecast": {
+        "sales": 3741821.0,
+        "operating_income": 251147.0,
+        "ordinary_income": 270564.0,
+        "net_income": 162203.0
+      }
+    }
+  }
+}

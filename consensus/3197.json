@@ -1,0 +1,20 @@
+{
+  "code": "3197",
+  "company": "すかいらーくホールディングス",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 490000.0,
+        "operating_income": 33500.0,
+        "ordinary_income": 29700.0,
+        "net_income": 19500.0
+      },
+      "consensus_forecast": {
+        "sales": 493919.0,
+        "operating_income": 34698.0,
+        "ordinary_income": 30516.0,
+        "net_income": 20012.0
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "code": "6902",
+  "company": "デンソー",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 7670000.0,
+        "operating_income": 500000.0,
+        "ordinary_income": 553000.0,
+        "net_income": 382000.0
+      },
+      "consensus_forecast": {
+        "sales": 7710992.0,
+        "operating_income": 538712.0,
+        "ordinary_income": 606975.0,
+        "net_income": 418720.0
+      }
+    }
+  }
+}

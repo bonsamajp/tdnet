@@ -1,0 +1,20 @@
+{
+  "code": "6981",
+  "company": "村田",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1960000.0,
+        "operating_income": 380000.0,
+        "ordinary_income": 390000.0,
+        "net_income": 293000.0
+      },
+      "consensus_forecast": {
+        "sales": 2030393.0,
+        "operating_income": 429853.0,
+        "ordinary_income": 440919.0,
+        "net_income": 334143.0
+      }
+    }
+  }
+}

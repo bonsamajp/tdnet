@@ -1,0 +1,20 @@
+{
+  "code": "8233",
+  "company": "高島屋",
+  "years": {
+    "2027年02月": {
+      "company_forecast": {
+        "sales": 503000.0,
+        "operating_income": 57500.0,
+        "ordinary_income": 57000.0,
+        "net_income": 38000.0
+      },
+      "consensus_forecast": {
+        "sales": 503925.0,
+        "operating_income": 58050.0,
+        "ordinary_income": 59225.0,
+        "net_income": 39825.0
+      }
+    }
+  }
+}

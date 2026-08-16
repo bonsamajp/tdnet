@@ -1,0 +1,20 @@
+{
+  "code": "4202",
+  "company": "ダイセル",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 595000.0,
+        "operating_income": 42500.0,
+        "ordinary_income": 43000.0,
+        "net_income": 32000.0
+      },
+      "consensus_forecast": {
+        "sales": 606200.0,
+        "operating_income": 44257.0,
+        "ordinary_income": 46560.0,
+        "net_income": 32733.0
+      }
+    }
+  }
+}

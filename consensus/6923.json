@@ -1,0 +1,20 @@
+{
+  "code": "6923",
+  "company": "スタンレー",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 622000.0,
+        "operating_income": 55000.0,
+        "ordinary_income": 58000.0,
+        "net_income": 34000.0
+      },
+      "consensus_forecast": {
+        "sales": 626056.0,
+        "operating_income": 55311.0,
+        "ordinary_income": 61667.0,
+        "net_income": 35678.0
+      }
+    }
+  }
+}

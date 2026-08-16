@@ -1,0 +1,16 @@
+{
+  "code": "8725",
+  "company": "MS&ADインシュアランスグループホールディングス",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 425000.0
+      },
+      "consensus_forecast": {
+        "sales": 7197732.0,
+        "ordinary_income": 942776.0,
+        "net_income": 504822.0
+      }
+    }
+  }
+}

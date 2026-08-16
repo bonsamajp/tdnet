@@ -1,0 +1,20 @@
+{
+  "code": "7276",
+  "company": "小糸",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 933000.0,
+        "operating_income": 60000.0,
+        "ordinary_income": 65500.0,
+        "net_income": 39500.0
+      },
+      "consensus_forecast": {
+        "sales": 955889.0,
+        "operating_income": 62005.0,
+        "ordinary_income": 68380.0,
+        "net_income": 44577.0
+      }
+    }
+  }
+}

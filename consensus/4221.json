@@ -1,0 +1,20 @@
+{
+  "code": "4221",
+  "company": "大倉工業",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 98000.0,
+        "operating_income": 6500.0,
+        "ordinary_income": 6700.0,
+        "net_income": 4300.0
+      },
+      "consensus_forecast": {
+        "sales": 101500.0,
+        "operating_income": 7000.0,
+        "ordinary_income": 7100.0,
+        "net_income": 5200.0
+      }
+    }
+  }
+}

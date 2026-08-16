@@ -1,0 +1,20 @@
+{
+  "code": "3778",
+  "company": "さくら",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 45000.0,
+        "operating_income": 1500.0,
+        "ordinary_income": 1200.0,
+        "net_income": 850.0
+      },
+      "consensus_forecast": {
+        "sales": 47583.0,
+        "operating_income": 3411.0,
+        "ordinary_income": 1666.0,
+        "net_income": 2280.0
+      }
+    }
+  }
+}

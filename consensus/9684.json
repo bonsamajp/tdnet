@@ -1,0 +1,20 @@
+{
+  "code": "9684",
+  "company": "スクウェア",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 298000.0,
+        "operating_income": 49000.0,
+        "ordinary_income": 49000.0,
+        "net_income": 31000.0
+      },
+      "consensus_forecast": {
+        "sales": 301866.0,
+        "operating_income": 51429.0,
+        "ordinary_income": 52818.0,
+        "net_income": 35176.0
+      }
+    }
+  }
+}

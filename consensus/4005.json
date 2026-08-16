@@ -1,0 +1,19 @@
+{
+  "code": "4005",
+  "company": "住友化学",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2360000.0,
+        "operating_income": 177000.0,
+        "net_income": 70000.0
+      },
+      "consensus_forecast": {
+        "sales": 2453417.0,
+        "operating_income": 192436.0,
+        "ordinary_income": 171440.0,
+        "net_income": 80718.0
+      }
+    }
+  }
+}

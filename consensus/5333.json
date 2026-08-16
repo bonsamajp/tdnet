@@ -1,0 +1,20 @@
+{
+  "code": "5333",
+  "company": "NGK",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 710000.0,
+        "operating_income": 107000.0,
+        "ordinary_income": 105000.0,
+        "net_income": 82000.0
+      },
+      "consensus_forecast": {
+        "sales": 719633.0,
+        "operating_income": 112543.0,
+        "ordinary_income": 111217.0,
+        "net_income": 85550.0
+      }
+    }
+  }
+}

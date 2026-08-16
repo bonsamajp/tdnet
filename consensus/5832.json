@@ -1,0 +1,17 @@
+{
+  "code": "5832",
+  "company": "ちゅうぎん",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 263000.0,
+        "ordinary_income": 65000.0,
+        "net_income": 45000.0
+      },
+      "consensus_forecast": {
+        "ordinary_income": 58700.0,
+        "net_income": 41800.0
+      }
+    }
+  }
+}

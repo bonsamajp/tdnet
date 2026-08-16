@@ -1,0 +1,20 @@
+{
+  "code": "2730",
+  "company": "エディオン",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 816000.0,
+        "operating_income": 29200.0,
+        "ordinary_income": 30300.0,
+        "net_income": 17400.0
+      },
+      "consensus_forecast": {
+        "sales": 810000.0,
+        "operating_income": 29200.0,
+        "ordinary_income": 30300.0,
+        "net_income": 17400.0
+      }
+    }
+  }
+}

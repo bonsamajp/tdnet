@@ -1,0 +1,14 @@
+{
+  "code": "3241",
+  "company": "ウィル",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 16758.0,
+        "operating_income": 1468.0,
+        "ordinary_income": 1330.0,
+        "net_income": 895.0
+      }
+    }
+  }
+}

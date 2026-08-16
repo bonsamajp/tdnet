@@ -1,0 +1,17 @@
+{
+  "code": "8377",
+  "company": "ほくほく",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "ordinary_income": 89000.0,
+        "net_income": 62000.0
+      },
+      "consensus_forecast": {
+        "sales": 359400.0,
+        "ordinary_income": 97200.0,
+        "net_income": 68300.0
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "code": "4887",
+  "company": "サワイ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 208400.0,
+        "operating_income": 27200.0,
+        "ordinary_income": 26000.0,
+        "net_income": 18600.0
+      },
+      "consensus_forecast": {
+        "sales": 210689.0,
+        "operating_income": 26913.0,
+        "ordinary_income": 25695.0,
+        "net_income": 18332.0
+      }
+    }
+  }
+}

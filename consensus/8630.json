@@ -1,0 +1,16 @@
+{
+  "code": "8630",
+  "company": "SOMPOホールディングス",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 490000.0
+      },
+      "consensus_forecast": {
+        "sales": 6339023.0,
+        "ordinary_income": 749576.0,
+        "net_income": 518275.0
+      }
+    }
+  }
+}

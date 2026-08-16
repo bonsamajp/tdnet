@@ -1,0 +1,20 @@
+{
+  "code": "6301",
+  "company": "小松",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 4118000.0,
+        "operating_income": 508000.0,
+        "ordinary_income": 466000.0,
+        "net_income": 318000.0
+      },
+      "consensus_forecast": {
+        "sales": 4253389.0,
+        "operating_income": 556078.0,
+        "ordinary_income": 518338.0,
+        "net_income": 359191.0
+      }
+    }
+  }
+}

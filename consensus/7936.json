@@ -1,0 +1,20 @@
+{
+  "code": "7936",
+  "company": "アシックス",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 950000.0,
+        "operating_income": 171000.0,
+        "ordinary_income": 165000.0,
+        "net_income": 110000.0
+      },
+      "consensus_forecast": {
+        "sales": 985983.0,
+        "operating_income": 183493.0,
+        "ordinary_income": 178175.0,
+        "net_income": 123438.0
+      }
+    }
+  }
+}

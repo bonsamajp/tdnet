@@ -1,0 +1,20 @@
+{
+  "code": "5802",
+  "company": "住友電気工業",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 5300000.0,
+        "operating_income": 425000.0,
+        "ordinary_income": 432000.0,
+        "net_income": 320000.0
+      },
+      "consensus_forecast": {
+        "sales": 5287391.0,
+        "operating_income": 451122.0,
+        "ordinary_income": 457861.0,
+        "net_income": 335629.0
+      }
+    }
+  }
+}

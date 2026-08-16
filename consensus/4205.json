@@ -1,0 +1,20 @@
+{
+  "code": "4205",
+  "company": "日本ゼオン",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 405000.0,
+        "operating_income": 38000.0,
+        "ordinary_income": 37000.0,
+        "net_income": 36000.0
+      },
+      "consensus_forecast": {
+        "sales": 428700.0,
+        "operating_income": 39200.0,
+        "ordinary_income": 38440.0,
+        "net_income": 36167.0
+      }
+    }
+  }
+}

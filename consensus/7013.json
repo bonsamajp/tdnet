@@ -3,31 +3,17 @@
   "company": "IHI",
   "years": {
     "2027年03月": {
-      "consensus_forecast": {
-        "sales": 1771317.0,
-        "operating_income": 191792.0,
-        "ordinary_income": 187900.0,
-        "net_income": 138532.0,
-        "eps": 130.67,
-        "dividend": 27.0
-      }
-    },
-    "2026年03月": {
       "company_forecast": {
-        "sales": 1640000.0,
-        "operating_income": 160000.0,
-        "ordinary_income": 145000.0,
-        "net_income": 125000.0,
-        "eps": 117.49,
-        "dividend": 80.0
+        "sales": 1830000.0,
+        "operating_income": 240000.0,
+        "ordinary_income": 230000.0,
+        "net_income": 165000.0
       },
       "consensus_forecast": {
-        "sales": 1658858.0,
-        "operating_income": 161858.0,
-        "ordinary_income": 161427.0,
-        "net_income": 130800.0,
-        "eps": 123.38,
-        "dividend": 32.0
+        "sales": 1838067.0,
+        "operating_income": 247258.0,
+        "ordinary_income": 245258.0,
+        "net_income": 174858.0
       }
     }
   }

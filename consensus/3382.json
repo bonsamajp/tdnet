@@ -1,0 +1,20 @@
+{
+  "code": "3382",
+  "company": "セブン",
+  "years": {
+    "2027年02月": {
+      "company_forecast": {
+        "sales": 9448000.0,
+        "operating_income": 405000.0,
+        "ordinary_income": 367000.0,
+        "net_income": 270000.0
+      },
+      "consensus_forecast": {
+        "sales": 10208519.0,
+        "operating_income": 410239.0,
+        "ordinary_income": 375070.0,
+        "net_income": 270913.0
+      }
+    }
+  }
+}

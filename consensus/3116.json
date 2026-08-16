@@ -1,0 +1,20 @@
+{
+  "code": "3116",
+  "company": "トヨタ紡織",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2120000.0,
+        "operating_income": 80000.0,
+        "ordinary_income": 83000.0,
+        "net_income": 48000.0
+      },
+      "consensus_forecast": {
+        "sales": 2094713.0,
+        "operating_income": 76200.0,
+        "ordinary_income": 82375.0,
+        "net_income": 47975.0
+      }
+    }
+  }
+}

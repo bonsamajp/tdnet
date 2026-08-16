@@ -1,0 +1,14 @@
+{
+  "code": "9506",
+  "company": "東北電力",
+  "years": {
+    "2027年03月": {
+      "consensus_forecast": {
+        "sales": 2424650.0,
+        "operating_income": 187600.0,
+        "ordinary_income": 153550.0,
+        "net_income": 107600.0
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "code": "6516",
+  "company": "山洋電気",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 128850.0,
+        "operating_income": 16290.0,
+        "ordinary_income": 16690.0,
+        "net_income": 12000.0
+      },
+      "consensus_forecast": {
+        "sales": 131250.0,
+        "operating_income": 15800.0,
+        "ordinary_income": 16300.0,
+        "net_income": 11750.0
+      }
+    }
+  }
+}

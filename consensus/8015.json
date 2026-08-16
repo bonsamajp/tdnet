@@ -1,0 +1,17 @@
+{
+  "code": "8015",
+  "company": "豊田通商",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 400000.0
+      },
+      "consensus_forecast": {
+        "sales": 12089513.0,
+        "operating_income": 611700.0,
+        "ordinary_income": 630167.0,
+        "net_income": 421270.0
+      }
+    }
+  }
+}

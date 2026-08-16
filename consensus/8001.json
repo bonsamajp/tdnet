@@ -1,0 +1,17 @@
+{
+  "code": "8001",
+  "company": "伊藤忠",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 950000.0
+      },
+      "consensus_forecast": {
+        "sales": 15563706.0,
+        "operating_income": 752538.0,
+        "ordinary_income": 1260123.0,
+        "net_income": 963352.0
+      }
+    }
+  }
+}

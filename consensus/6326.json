@@ -1,0 +1,20 @@
+{
+  "code": "6326",
+  "company": "クボタ",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 3150000.0,
+        "operating_income": 300000.0,
+        "ordinary_income": 317000.0,
+        "net_income": 210000.0
+      },
+      "consensus_forecast": {
+        "sales": 3196380.0,
+        "operating_income": 319470.0,
+        "ordinary_income": 335078.0,
+        "net_income": 227928.0
+      }
+    }
+  }
+}

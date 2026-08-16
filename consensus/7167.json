@@ -1,0 +1,17 @@
+{
+  "code": "7167",
+  "company": "めぶき",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "ordinary_income": 139000.0,
+        "net_income": 95000.0
+      },
+      "consensus_forecast": {
+        "sales": 484500.0,
+        "ordinary_income": 152600.0,
+        "net_income": 103933.0
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "code": "8053",
+  "company": "住友商事",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 630000.0
+      },
+      "consensus_forecast": {
+        "sales": 7737482.0,
+        "ordinary_income": 789469.0,
+        "net_income": 643123.0
+      }
+    }
+  }
+}

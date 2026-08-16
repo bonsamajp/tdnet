@@ -1,0 +1,16 @@
+{
+  "code": "2768",
+  "company": "双日",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 130000.0
+      },
+      "consensus_forecast": {
+        "sales": 3018458.0,
+        "ordinary_income": 161230.0,
+        "net_income": 128582.0
+      }
+    }
+  }
+}

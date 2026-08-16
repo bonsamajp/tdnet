@@ -1,0 +1,17 @@
+{
+  "code": "8002",
+  "company": "丸紅",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 580000.0
+      },
+      "consensus_forecast": {
+        "sales": 8541612.0,
+        "operating_income": 329057.0,
+        "ordinary_income": 734907.0,
+        "net_income": 605987.0
+      }
+    }
+  }
+}

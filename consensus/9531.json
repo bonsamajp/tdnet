@@ -1,0 +1,20 @@
+{
+  "code": "9531",
+  "company": "東京ガス",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2947000.0,
+        "operating_income": 186000.0,
+        "ordinary_income": 173000.0,
+        "net_income": 137000.0
+      },
+      "consensus_forecast": {
+        "sales": 3036317.0,
+        "operating_income": 171850.0,
+        "ordinary_income": 161333.0,
+        "net_income": 126267.0
+      }
+    }
+  }
+}

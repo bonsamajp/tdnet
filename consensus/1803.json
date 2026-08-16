@@ -1,0 +1,20 @@
+{
+  "code": "1803",
+  "company": "清水",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2310000.0,
+        "operating_income": 153000.0,
+        "ordinary_income": 148000.0,
+        "net_income": 130000.0
+      },
+      "consensus_forecast": {
+        "sales": 2290871.0,
+        "operating_income": 154843.0,
+        "ordinary_income": 152829.0,
+        "net_income": 138929.0
+      }
+    }
+  }
+}

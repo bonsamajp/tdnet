@@ -1,0 +1,19 @@
+{
+  "code": "4203",
+  "company": "住友ベークライト",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 337000.0,
+        "operating_income": 37500.0,
+        "net_income": 28500.0
+      },
+      "consensus_forecast": {
+        "sales": 351000.0,
+        "operating_income": 40386.0,
+        "ordinary_income": 43343.0,
+        "net_income": 30500.0
+      }
+    }
+  }
+}

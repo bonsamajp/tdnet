@@ -1,0 +1,20 @@
+{
+  "code": "8242",
+  "company": "エイチ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 712000.0,
+        "operating_income": 32500.0,
+        "ordinary_income": 33000.0,
+        "net_income": 23000.0
+      },
+      "consensus_forecast": {
+        "sales": 723000.0,
+        "operating_income": 34067.0,
+        "ordinary_income": 34833.0,
+        "net_income": 24167.0
+      }
+    }
+  }
+}

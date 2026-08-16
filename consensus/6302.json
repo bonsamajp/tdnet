@@ -1,0 +1,20 @@
+{
+  "code": "6302",
+  "company": "住友重機",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 1090000.0,
+        "operating_income": 60000.0,
+        "ordinary_income": 55000.0,
+        "net_income": 34000.0
+      },
+      "consensus_forecast": {
+        "sales": 1087233.0,
+        "operating_income": 58933.0,
+        "ordinary_income": 53933.0,
+        "net_income": 33300.0
+      }
+    }
+  }
+}

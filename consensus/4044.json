@@ -1,0 +1,20 @@
+{
+  "code": "4044",
+  "company": "セントラル",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 164000.0,
+        "operating_income": 10000.0,
+        "ordinary_income": 10300.0,
+        "net_income": 7200.0
+      },
+      "consensus_forecast": {
+        "sales": 162667.0,
+        "operating_income": 10067.0,
+        "ordinary_income": 10500.0,
+        "net_income": 7333.0
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "code": "8058",
+  "company": "三菱商事",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 1100000.0
+      },
+      "consensus_forecast": {
+        "sales": 20941967.0,
+        "ordinary_income": 1565215.0,
+        "net_income": 1152846.0
+      }
+    }
+  }
+}

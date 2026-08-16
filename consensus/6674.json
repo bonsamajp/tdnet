@@ -1,0 +1,20 @@
+{
+  "code": "6674",
+  "company": "ジーエス",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 660000.0,
+        "operating_income": 60000.0,
+        "ordinary_income": 56000.0,
+        "net_income": 36000.0
+      },
+      "consensus_forecast": {
+        "sales": 654190.0,
+        "operating_income": 64340.0,
+        "ordinary_income": 62590.0,
+        "net_income": 40600.0
+      }
+    }
+  }
+}

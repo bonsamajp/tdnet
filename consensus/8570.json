@@ -1,0 +1,20 @@
+{
+  "code": "8570",
+  "company": "イオンフ",
+  "years": {
+    "2027年02月": {
+      "company_forecast": {
+        "sales": 600000.0,
+        "operating_income": 45000.0,
+        "ordinary_income": 45000.0,
+        "net_income": 15000.0
+      },
+      "consensus_forecast": {
+        "sales": 615680.0,
+        "operating_income": 53547.0,
+        "ordinary_income": 51736.0,
+        "net_income": 20910.0
+      }
+    }
+  }
+}

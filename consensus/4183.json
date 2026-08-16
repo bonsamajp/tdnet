@@ -1,0 +1,20 @@
+{
+  "code": "4183",
+  "company": "三井化学",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1900000.0,
+        "operating_income": 83000.0,
+        "ordinary_income": 74000.0,
+        "net_income": 45000.0
+      },
+      "consensus_forecast": {
+        "sales": 1891575.0,
+        "operating_income": 91867.0,
+        "ordinary_income": 82667.0,
+        "net_income": 48267.0
+      }
+    }
+  }
+}

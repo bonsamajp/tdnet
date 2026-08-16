@@ -1,0 +1,20 @@
+{
+  "code": "2502",
+  "company": "アサヒグループホールディングス",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 3220000.0,
+        "operating_income": 297000.0,
+        "ordinary_income": 274000.0,
+        "net_income": 194000.0
+      },
+      "consensus_forecast": {
+        "sales": 3149833.0,
+        "operating_income": 288213.0,
+        "ordinary_income": 271014.0,
+        "net_income": 189256.0
+      }
+    }
+  }
+}

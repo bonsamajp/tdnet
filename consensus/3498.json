@@ -1,0 +1,20 @@
+{
+  "code": "3498",
+  "company": "霞ヶ関キャピタル",
+  "years": {
+    "2026年08月": {
+      "company_forecast": {
+        "sales": 150000.0,
+        "operating_income": 26500.0,
+        "ordinary_income": 24000.0,
+        "net_income": 16500.0
+      },
+      "consensus_forecast": {
+        "sales": 154878.0,
+        "operating_income": 26598.0,
+        "ordinary_income": 24638.0,
+        "net_income": 16586.0
+      }
+    }
+  }
+}

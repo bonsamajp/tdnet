@@ -1,32 +1,19 @@
 {
   "code": "9532",
-  "company": "osaka_gas",
+  "company": "大阪ガス",
   "years": {
     "2027年03月": {
-      "consensus_forecast": {
-        "sales": 4807067.0,
-        "operating_income": 203998.0,
-        "ordinary_income": 181612.0,
-        "net_income": 127911.0,
-        "eps": 201.07,
-        "dividend": 80.0
-      }
-    },
-    "2026年03月": {
       "company_forecast": {
-        "sales": 4600000.0,
-        "ordinary_income": 110000.0,
-        "net_income": 75000.0,
-        "eps": 117.92,
-        "dividend": 80.0
+        "sales": 2070000.0,
+        "operating_income": 150000.0,
+        "ordinary_income": 190000.0,
+        "net_income": 145000.0
       },
       "consensus_forecast": {
-        "sales": 4614822.0,
-        "operating_income": 139888.0,
-        "ordinary_income": 111820.0,
-        "net_income": 78179.0,
-        "eps": 122.9,
-        "dividend": 80.0
+        "sales": 2175071.0,
+        "operating_income": 142286.0,
+        "ordinary_income": 181943.0,
+        "net_income": 140357.0
       }
     }
   }

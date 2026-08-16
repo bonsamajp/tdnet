@@ -1,0 +1,19 @@
+{
+  "code": "5101",
+  "company": "横浜ゴム",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 1300000.0,
+        "operating_income": 191500.0,
+        "net_income": 109000.0
+      },
+      "consensus_forecast": {
+        "sales": 1325101.0,
+        "operating_income": 198877.0,
+        "ordinary_income": 196233.0,
+        "net_income": 124305.0
+      }
+    }
+  }
+}

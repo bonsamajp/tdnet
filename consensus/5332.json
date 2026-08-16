@@ -1,0 +1,20 @@
+{
+  "code": "5332",
+  "company": "TOTO",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 785000.0,
+        "operating_income": 60000.0,
+        "ordinary_income": 58500.0,
+        "net_income": 46000.0
+      },
+      "consensus_forecast": {
+        "sales": 784725.0,
+        "operating_income": 61938.0,
+        "ordinary_income": 63413.0,
+        "net_income": 47882.0
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "code": "4507",
+  "company": "塩野義",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 700000.0,
+        "operating_income": 220000.0,
+        "ordinary_income": 220000.0,
+        "net_income": 210000.0
+      },
+      "consensus_forecast": {
+        "sales": 701904.0,
+        "operating_income": 228929.0,
+        "ordinary_income": 239636.0,
+        "net_income": 214728.0
+      }
+    }
+  }
+}

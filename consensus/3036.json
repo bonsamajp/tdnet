@@ -1,0 +1,20 @@
+{
+  "code": "3036",
+  "company": "アルコニックス",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 235000.0,
+        "operating_income": 10700.0,
+        "ordinary_income": 10000.0,
+        "net_income": 6600.0
+      },
+      "consensus_forecast": {
+        "sales": 235000.0,
+        "operating_income": 11000.0,
+        "ordinary_income": 10000.0,
+        "net_income": 6500.0
+      }
+    }
+  }
+}

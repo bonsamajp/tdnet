@@ -1,0 +1,20 @@
+{
+  "code": "3407",
+  "company": "旭化成",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 3254000.0,
+        "operating_income": 248000.0,
+        "ordinary_income": 247500.0,
+        "net_income": 160000.0
+      },
+      "consensus_forecast": {
+        "sales": 3282936.0,
+        "operating_income": 255282.0,
+        "ordinary_income": 255850.0,
+        "net_income": 165920.0
+      }
+    }
+  }
+}

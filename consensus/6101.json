@@ -1,0 +1,19 @@
+{
+  "code": "6101",
+  "company": "ツガミ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 145000.0,
+        "operating_income": 36500.0,
+        "net_income": 17000.0
+      },
+      "consensus_forecast": {
+        "sales": 145000.0,
+        "operating_income": 36500.0,
+        "ordinary_income": 36500.0,
+        "net_income": 17000.0
+      }
+    }
+  }
+}

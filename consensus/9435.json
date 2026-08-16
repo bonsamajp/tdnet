@@ -1,0 +1,19 @@
+{
+  "code": "9435",
+  "company": "光通信",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 775000.0,
+        "operating_income": 130000.0,
+        "net_income": 120000.0
+      },
+      "consensus_forecast": {
+        "sales": 828090.0,
+        "operating_income": 129450.0,
+        "ordinary_income": 170970.0,
+        "net_income": 119240.0
+      }
+    }
+  }
+}

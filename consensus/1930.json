@@ -1,0 +1,14 @@
+{
+  "code": "1930",
+  "company": "北陸電気工事",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 70000.0,
+        "operating_income": 6000.0,
+        "ordinary_income": 6200.0,
+        "net_income": 4100.0
+      }
+    }
+  }
+}
