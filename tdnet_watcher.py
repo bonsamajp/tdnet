@@ -13,6 +13,7 @@ TDnet 更新監視ウォッチャー
   python tdnet_watcher.py --notify-config notify.ini  # 通知設定ファイルを指定
 """
 
+import threading
 import time
 import logging
 import argparse
@@ -200,7 +201,10 @@ def watch(
                 logger.info("新規行合計: %d件", len(new_rows))
 
             if not no_pdf and pdf_rows:
-                dl.download_pdfs(pdf_rows, pdf_dir)
+                # PDFダウンロードは監視ループをブロックしないようバックグラウンドで実行
+                threading.Thread(
+                    target=dl.download_pdfs, args=(pdf_rows, pdf_dir), daemon=True,
+                ).start()
 
             last_first_row = first_row
             is_first_run = False

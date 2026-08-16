@@ -163,40 +163,83 @@ def _build_table_data(columns, item_values):
     return table_data
 
 
+def _parse_excel_format(lines):
+    """
+    Excelからコピペしたタブ区切り形式を解析する。
+    CODE\t証券コード
+    COMPANY\t会社名
+    \t列名1\t列名2...
+    売上高\t数値1\t数値2...
+    """
+    code = ""
+    company = ""
+    header_lines = []
+    data_lines = []
+
+    for line in lines:
+        cols = line.split("\t")
+        first = cols[0].strip()
+        if re.match(r"CODE", first, re.IGNORECASE):
+            code = cols[1].strip() if len(cols) > 1 else ""
+        elif re.match(r"COMPANY", first, re.IGNORECASE):
+            company = cols[1].strip() if len(cols) > 1 else ""
+        elif _is_item_line(line):
+            data_lines.append(line)
+        elif any(_extract_year(c) for c in cols):
+            header_lines.append(line)
+
+    return code, company, header_lines, data_lines
+
+
+def _is_excel_format(text):
+    """1行目か2行目に CODE\t や COMPANY\t があればExcel貼り付け形式と判断する。"""
+    for line in text.splitlines()[:5]:
+        if re.match(r"CODE\t", line, re.IGNORECASE) or re.match(r"COMPANY\t", line, re.IGNORECASE):
+            return True
+    return False
+
+
 def parse_input_file(path):
     with open(path, encoding="utf-8") as f:
         text = f.read()
-    code = ""
-    company = ""
-    for line in text.splitlines():
-        line = line.strip()
-        if line.startswith("#") or not line:
-            continue
-        if re.match(r"CODE\s*=", line, re.IGNORECASE):
-            code = re.sub(r"^CODE\s*=\s*", "", line, flags=re.IGNORECASE).strip()
-        elif re.match(r"COMPANY\s*=", line, re.IGNORECASE):
-            company = re.sub(r"^COMPANY\s*=\s*", "", line, flags=re.IGNORECASE).strip()
+
+    if _is_excel_format(text):
+        lines = [l.rstrip() for l in text.splitlines() if l.strip()]
+        code, company, header_lines, data_lines = _parse_excel_format(lines)
+    else:
+        code = ""
+        company = ""
+        for line in text.splitlines():
+            line = line.strip()
+            if line.startswith("#") or not line:
+                continue
+            if re.match(r"CODE\s*=", line, re.IGNORECASE):
+                code = re.sub(r"^CODE\s*=\s*", "", line, flags=re.IGNORECASE).strip()
+            elif re.match(r"COMPANY\s*=", line, re.IGNORECASE):
+                company = re.sub(r"^COMPANY\s*=\s*", "", line, flags=re.IGNORECASE).strip()
+        table_match = re.search(r"\[TABLE\](.*?)\[/TABLE\]", text, re.DOTALL)
+        if not table_match:
+            raise ValueError("[TABLE] ～ [/TABLE] ブロックが見つかりません")
+        table_text = table_match.group(1).strip()
+        lines = [l.rstrip() for l in table_text.splitlines()]
+        lines = [l for l in lines if l.strip()]
+        header_lines = []
+        data_lines = []
+        for line in lines:
+            if _is_item_line(line):
+                data_lines.append(line)
+            else:
+                header_lines.append(line)
+
     if not code:
         raise ValueError("CODE が見つかりません")
     if not company:
         raise ValueError("COMPANY が見つかりません")
-    table_match = re.search(r"\[TABLE\](.*?)\[/TABLE\]", text, re.DOTALL)
-    if not table_match:
-        raise ValueError("[TABLE] ～ [/TABLE] ブロックが見つかりません")
-    table_text = table_match.group(1).strip()
-    lines = [l.rstrip() for l in table_text.splitlines()]
-    lines = [l for l in lines if l.strip()]
-    header_lines = []
-    data_lines = []
-    for line in lines:
-        if _is_item_line(line):
-            data_lines.append(line)
-        else:
-            header_lines.append(line)
     if not header_lines:
         raise ValueError("ヘッダー行が見つかりません")
     if not data_lines:
         raise ValueError("データ行が見つかりません")
+
     columns = _parse_header(header_lines)
     print(f"  ヘッダー解析: {len(columns)} 列検出")
     for i, col in enumerate(columns):
