@@ -17,6 +17,7 @@ import json
 import logging
 import os
 import re
+import unicodedata
 import urllib.request
 import zipfile
 
@@ -115,24 +116,33 @@ ANNUAL_FORECAST_CONTEXTS = [
 QUARTERLY_CONTEXTS = {
     "q1": {
         "current": [
+            # Current prefix あり（積水ハウス等）
+            "CurrentAccumulatedQ1Duration_ConsolidatedMember_ResultMember",
+            "CurrentAccumulatedQ1Duration_ConsolidatedMember",
+            "CurrentAccumulatedQ1Duration",
+            # Current prefix なし
             "AccumulatedQ1Duration_ConsolidatedMember_ResultMember",
             "AccumulatedQ1Duration_ConsolidatedMember",
-            "AccumulatedQ1Duration_ResultMember",
             "AccumulatedQ1Duration",
             "Q1YTDDuration_ConsolidatedMember_ResultMember",
             "Q1YTDDuration_ConsolidatedMember",
-            "Q1YTDDuration",
         ],
         "prior": [
+            # Prior prefix（積水ハウス等）
+            "PriorAccumulatedQ1Duration_ConsolidatedMember_ResultMember",
+            "PriorAccumulatedQ1Duration_ConsolidatedMember",
+            "PriorAccumulatedQ1Duration",
+            # Prior1Year prefix
             "Prior1YearAccumulatedQ1Duration_ConsolidatedMember_ResultMember",
             "Prior1YearAccumulatedQ1Duration_ConsolidatedMember",
             "Prior1YearAccumulatedQ1Duration",
-            "Prior1YearQ1YTDDuration_ConsolidatedMember",
-            "Prior1YearQ1YTDDuration",
         ],
     },
     "q2": {
         "current": [
+            "CurrentAccumulatedQ2Duration_ConsolidatedMember_ResultMember",
+            "CurrentAccumulatedQ2Duration_ConsolidatedMember",
+            "CurrentAccumulatedQ2Duration",
             "AccumulatedQ2Duration_ConsolidatedMember_ResultMember",
             "AccumulatedQ2Duration_ConsolidatedMember",
             "AccumulatedQ2Duration",
@@ -141,21 +151,29 @@ QUARTERLY_CONTEXTS = {
             "HalfYearDuration",
         ],
         "prior": [
+            "PriorAccumulatedQ2Duration_ConsolidatedMember_ResultMember",
+            "PriorAccumulatedQ2Duration_ConsolidatedMember",
+            "PriorAccumulatedQ2Duration",
             "Prior1YearAccumulatedQ2Duration_ConsolidatedMember_ResultMember",
             "Prior1YearAccumulatedQ2Duration_ConsolidatedMember",
             "Prior1YearAccumulatedQ2Duration",
             "Prior1YearHalfYearDuration_ConsolidatedMember_ResultMember",
             "Prior1YearHalfYearDuration_ConsolidatedMember",
-            "Prior1YearHalfYearDuration",
         ],
     },
     "q3": {
         "current": [
+            "CurrentAccumulatedQ3Duration_ConsolidatedMember_ResultMember",
+            "CurrentAccumulatedQ3Duration_ConsolidatedMember",
+            "CurrentAccumulatedQ3Duration",
             "AccumulatedQ3Duration_ConsolidatedMember_ResultMember",
             "AccumulatedQ3Duration_ConsolidatedMember",
             "AccumulatedQ3Duration",
         ],
         "prior": [
+            "PriorAccumulatedQ3Duration_ConsolidatedMember_ResultMember",
+            "PriorAccumulatedQ3Duration_ConsolidatedMember",
+            "PriorAccumulatedQ3Duration",
             "Prior1YearAccumulatedQ3Duration_ConsolidatedMember_ResultMember",
             "Prior1YearAccumulatedQ3Duration_ConsolidatedMember",
             "Prior1YearAccumulatedQ3Duration",
@@ -180,8 +198,28 @@ PREVIOUS_FORECAST_CONTEXTS = [
 
 
 # ---------------------------------------------------------------------------
-# 登録データ読み込み
+# 登録データ読み込み・更新
 # ---------------------------------------------------------------------------
+
+def _update_company_forecast(code: str, year: str, revised: dict) -> None:
+    """業績予想修正の修正後数値で登録済み会社予想を上書きする。"""
+    if len(code) == 5 and code.endswith("0"):
+        code = code[:-1]
+    path = os.path.join(DATA_DIR, f"{code}.json")
+    if not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    entry = data.get("years", {}).get(year)
+    if entry is None:
+        return
+    current = entry.get("company_forecast", {})
+    updated = {**current, **{k: v for k, v in revised.items() if v is not None}}
+    entry["company_forecast"] = updated
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    logger.info("会社予想を更新しました: %s %s", code, year)
+
 
 def _load_consensus(code: str) -> dict | None:
     if len(code) == 5 and code.endswith("0"):
@@ -194,6 +232,7 @@ def _load_consensus(code: str) -> dict | None:
 
 
 def _extract_year_from_title(title: str) -> str | None:
+    title = unicodedata.normalize("NFKC", title)
     m = re.search(r"(\d{4})年(\d{1,2})月", title)
     if m:
         return f"{m.group(1)}年{m.group(2).zfill(2)}月"
@@ -488,9 +527,36 @@ def build_revision_report(
     consensus_fc = entry.get("consensus_forecast", {})
     company_name = consensus_data.get("company", match.get("company", ""))
 
+    # 主要4項目の修正率サマリー（営業利益を筆頭に）
+    SUMMARY_KEYS = ["operating_income", "net_income", "sales", "ordinary_income"]
+    summary_parts = []
+    for key in SUMMARY_KEYS:
+        rev  = revised.get(key)
+        prev = previous.get(key)
+        if rev is None or prev is None:
+            continue
+        pct = _divergence(rev, prev)
+        if pct is None:
+            continue
+        arrow = "▲" if pct >= 0 else "▼"
+        summary_parts.append(f"{ITEM_LABELS[key]} {arrow}{abs(pct):.1f}%")
+
+    if summary_parts:
+        summary_line = "  ".join(summary_parts)
+        score = sum(
+            (1 if (_divergence(revised.get(k), previous.get(k)) or 0) >= 0 else -1)
+            for k in SUMMARY_KEYS if revised.get(k) is not None and previous.get(k) is not None
+        )
+        overall = "【上方修正】" if score > 0 else "【下方修正】" if score < 0 else "【一部修正】"
+    else:
+        summary_line = "修正率算出不可"
+        overall = ""
+
     lines = [
-        "━" * 62,
-        f"🔄 業績予想修正: {company_name} [{match.get('code', '')}]",
+        "★" * 62,
+        f"  ⚠ 業績予想修正  {overall}  {company_name} [{match.get('code', '')}]",
+        f"  {summary_line}",
+        "★" * 62,
         f"   {match.get('time', '')}  {match.get('title', '')[:45]}",
         f"   対象年度: {year}",
         "━" * 62,
@@ -510,7 +576,8 @@ def build_revision_report(
             f" {_fmt_pct(chg_pct):>8} {_fmt_pct(con_pct):>14}"
         )
 
-    lines += ["─" * 62, f"PDF: {match.get('pdf_url', '-')}", "━" * 62]
+    lines += ["─" * 62, f"PDF: {match.get('pdf_url', '-')}", "━" * 62,
+              "※ 登録済み会社予想を修正後の数値に自動更新しました"]
     return "\n".join(lines)
 
 
@@ -603,7 +670,12 @@ def analyze(match: dict) -> str | None:
         previous = _parse_xbrl_values(xbrl_text, PREVIOUS_FORECAST_CONTEXTS)
         logger.info("XBRL解析完了（修正前予想）: %d項目", len(previous))
 
-        return build_revision_report(match, revised, previous, consensus_data, year)
+        report = build_revision_report(match, revised, previous, consensus_data, year)
+
+        if revised:
+            _update_company_forecast(code, year, revised)
+
+        return report
 
     return None
 

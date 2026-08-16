@@ -122,7 +122,7 @@ def _compact_report_summary(report: str) -> tuple[str, str, str]:
     """
     if report.startswith("📈"):
         return _compact_quarterly_summary(report)
-    if report.startswith("🔄"):
+    if report.startswith("★"):
         return _compact_revision_summary(report)
     return _compact_annual_summary(report)
 
@@ -310,11 +310,40 @@ class Notifier:
 
     def _desktop(self, title: str, body: str, matches: list[dict], report: str | None = None) -> None:
         import xml.sax.saxutils as saxutils
+        import datetime
 
         t_xml = saxutils.escape(title)
         b_xml = saxutils.escape(body[:200].replace("\n", " / "))
-        url = next((m["pdf_url"] for m in matches if m.get("pdf_url")), "")
-        launch_attr = f' activationType="protocol" launch="{saxutils.escape(url)}"' if url else ""
+
+        # レポートがある場合はHTMLファイルに保存してクリックで開く
+        if report:
+            m0 = matches[0]
+            out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
+            os.makedirs(out_dir, exist_ok=True)
+            ts = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            code = m0.get("code", "unknown")
+            report_path = os.path.join(out_dir, f"report_{code}_{ts}.html")
+            pdf_url = m0.get("pdf_url", "")
+            report_html = report.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br>")
+            html = (
+                "<!DOCTYPE html><html><head>"
+                '<meta charset="utf-8">'
+                '<style>body{font-family:monospace;font-size:14px;padding:20px;line-height:1.8}'
+                'h2{font-size:16px} a{color:#0066cc}</style>'
+                f"</head><body>"
+                f"<h2>{saxutils.escape(title)}</h2>"
+                f"<p>{saxutils.escape(body).replace(chr(10), '<br>')}</p>"
+            )
+            if pdf_url:
+                html += f'<p><a href="{saxutils.escape(pdf_url)}" target="_blank">決算短信PDFを開く</a></p>'
+            html += f"<hr><pre>{report_html}</pre></body></html>"
+            with open(report_path, "w", encoding="utf-8") as f:
+                f.write(html)
+            file_uri = "file:///" + report_path.replace("\\", "/").replace(" ", "%20")
+            launch_attr = f' activationType="protocol" launch="{saxutils.escape(file_uri)}"'
+        else:
+            url = next((m["pdf_url"] for m in matches if m.get("pdf_url")), "")
+            launch_attr = f' activationType="protocol" launch="{saxutils.escape(url)}"' if url else ""
 
         extra_xml = ""
         if report:
