@@ -19,3 +19,8 @@ test_output.txt
 watcher_test.txt
 watcher_test2.txt
 /keywords.txt
+output_test/
+test.py
+template.txt
+/tdnet_*.csv
+コンセンサス.xlsx
