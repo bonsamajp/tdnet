@@ -24,3 +24,6 @@ test.py
 template.txt
 /tdnet_*.csv
 コンセンサス.xlsx
+
+# 会社データ入力txt（決算発表後に削除する運用のため追跡しない）
+*.txt
