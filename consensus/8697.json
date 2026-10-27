@@ -1,19 +1,33 @@
 {
   "code": "8697",
-  "company": "日本取引所",
+  "company": "日本取引所グループ",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 270013.0,
+        "operating_income": 158237.0,
+        "ordinary_income": 161123.0,
+        "net_income": 108697.0,
+        "eps": 106.73,
+        "dividend": 82.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "sales": 205000.0,
-        "operating_income": 115000.0,
-        "ordinary_income": 116000.0,
-        "net_income": 77500.0
+        "sales": 252500.0,
+        "operating_income": 154500.0,
+        "ordinary_income": 156500.0,
+        "net_income": 105000.0,
+        "eps": 102.9,
+        "dividend": 82.0
       },
       "consensus_forecast": {
-        "sales": 232800.0,
-        "operating_income": 132950.0,
-        "ordinary_income": 138367.0,
-        "net_income": 92467.0
+        "sales": 260486.0,
+        "operating_income": 159592.0,
+        "ordinary_income": 161846.0,
+        "net_income": 108699.0,
+        "eps": 106.73,
+        "dividend": 83.0
       }
     }
   }
