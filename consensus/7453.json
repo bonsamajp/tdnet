@@ -1,0 +1,34 @@
+{
+  "code": "7453",
+  "company": "良品計画",
+  "years": {
+    "2027年08月": {
+      "consensus_forecast": {
+        "sales": 1002588.0,
+        "operating_income": 112107.0,
+        "ordinary_income": 111858.0,
+        "net_income": 75852.0,
+        "eps": 142.87,
+        "dividend": 39.0
+      }
+    },
+    "2026年08月": {
+      "company_forecast": {
+        "sales": 907000.0,
+        "operating_income": 98000.0,
+        "ordinary_income": 99000.0,
+        "net_income": 67000.0,
+        "eps": 126.19,
+        "dividend": 32.0
+      },
+      "consensus_forecast": {
+        "sales": 909195.0,
+        "operating_income": 97749.0,
+        "ordinary_income": 98949.0,
+        "net_income": 67509.0,
+        "eps": 127.15,
+        "dividend": 34.0
+      }
+    }
+  }
+}
