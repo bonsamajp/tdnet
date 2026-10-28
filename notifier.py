@@ -113,6 +113,30 @@ def _try_analyze(match: dict) -> str | None:
 # 業績レポートサマリー（トースト通知用）
 # ---------------------------------------------------------------------------
 
+def _reorder_report_for_display(report: str) -> str:
+    """
+    HTMLレポート表示用に節の順序を入れ替える。
+    四半期累計実績（📈）と通期予想vsコンセンサス（📅、四半期開示に伴う修正時のみ付記）
+    が両方含まれる場合、通期予想セクションを先頭に表示する。
+    トースト通知の要約解析（_compact_report_summary）はこの関数を経由しない元の
+    report文字列を使うため、ここでの並び替えは影響しない。
+    """
+    import re
+
+    if "📈" not in report or "📅" not in report:
+        return report
+
+    sections = re.split(r'(?=━+\n[📈📅])', report)
+    forecast_sections, other_sections = [], []
+    for s in sections:
+        lines = s.splitlines()
+        if len(lines) > 1 and lines[1].startswith("📅"):
+            forecast_sections.append(s)
+        else:
+            other_sections.append(s)
+    return "".join(forecast_sections + other_sections)
+
+
 def _compact_report_summary(report: str) -> tuple[str, str, str]:
     """
     報告種別を自動判定してトースト用3行サマリーを返す。
@@ -291,7 +315,7 @@ class Notifier:
             )
             report = r.get("_report")
             if report:
-                part += f"\n\n{report}"
+                part += f"\n\n{_reorder_report_for_display(report)}"
             summary_parts.append(part)
 
         summary_body = "\n\n" + ("─" * 40 + "\n\n").join(summary_parts)
@@ -322,7 +346,8 @@ class Notifier:
             code = m0.get("code", "unknown")
             report_path = os.path.join(out_dir, f"report_{code}_{ts}.html")
             pdf_url = m0.get("pdf_url", "")
-            report_html = report.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br>")
+            report_display = _reorder_report_for_display(report)
+            report_html = report_display.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\n", "<br>")
             html = (
                 "<!DOCTYPE html><html><head>"
                 '<meta charset="utf-8">'
