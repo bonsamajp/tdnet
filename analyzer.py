@@ -438,15 +438,17 @@ def build_report(match: dict, actuals: dict, consensus_data: dict, year: str) ->
     return "\n".join(lines)
 
 
-def build_forecast_report(match: dict, forecasts: dict, consensus_data: dict, next_year: str) -> str:
-    entry        = consensus_data["years"][next_year]
+def build_forecast_report(
+    match: dict, forecasts: dict, consensus_data: dict, year: str, label: str = "翌期予想",
+) -> str:
+    entry        = consensus_data["years"][year]
     consensus_fc = entry.get("consensus_forecast", {})
     company_name = consensus_data.get("company", match.get("company", ""))
 
     lines = [
         "━" * 56,
-        f"📅 翌期予想 vs コンセンサス: {company_name} [{match.get('code', '')}]",
-        f"   対象年度: {next_year}",
+        f"📅 {label} vs コンセンサス: {company_name} [{match.get('code', '')}]",
+        f"   対象年度: {year}",
         "━" * 56,
         f"{'項目':<10} {'会社予想':>12} {'コンセンサス比':>14}",
         "─" * 56,
@@ -458,6 +460,20 @@ def build_forecast_report(match: dict, forecasts: dict, consensus_data: dict, ne
 
     lines += ["─" * 56, "━" * 56]
     return "\n".join(lines)
+
+
+def _forecast_changed(xbrl_fc: dict, registered_fc: dict, tol: float = 0.001) -> bool:
+    """四半期XBRL内の通期会社予想が登録済み予想と異なるか判定する（丸め誤差は無視）。"""
+    common_keys = set(xbrl_fc) & set(registered_fc)
+    for key in common_keys:
+        new_val, old_val = xbrl_fc[key], registered_fc[key]
+        if old_val == 0:
+            if new_val != 0:
+                return True
+            continue
+        if abs(new_val - old_val) / abs(old_val) > tol:
+            return True
+    return False
 
 
 # ---------------------------------------------------------------------------
@@ -654,7 +670,20 @@ def analyze(match: dict) -> str | None:
         annual_fc_xbrl = _parse_xbrl_values(xbrl_text, ANNUAL_FORECAST_CONTEXTS)
         logger.info("XBRL解析完了（通期会社予想）: %d項目", len(annual_fc_xbrl))
 
-        return build_quarterly_report(match, actuals, prior, annual_fc_xbrl, consensus_data, year, dtype)
+        report = build_quarterly_report(match, actuals, prior, annual_fc_xbrl, consensus_data, year, dtype)
+
+        # 四半期決算と同時に通期業績予想が修正されているケース
+        # （「業績予想との差異及び修正に関するお知らせ」等が同時開示される場合）。
+        # 登録済み会社予想と差があればコンセンサス比較を追記し、登録値を更新する。
+        registered_fc = years_data.get(year, {}).get("company_forecast", {})
+        if annual_fc_xbrl and _forecast_changed(annual_fc_xbrl, registered_fc):
+            logger.info("四半期開示に伴う通期予想修正を検知: %s %s", code, year)
+            report += "\n" + build_forecast_report(
+                match, annual_fc_xbrl, consensus_data, year, label="通期予想(修正後)"
+            )
+            _update_company_forecast(code, year, annual_fc_xbrl)
+
+        return report
 
     # ── 業績予想修正 ─────────────────────────────────────────────────────────
     if dtype == "revision":

@@ -265,18 +265,19 @@ class Notifier:
         if not matches:
             return
 
-        analysis_results: dict[str, str] = {}
+        # 同一銘柄・同時刻に複数開示（決算短信＋業績予想修正のお知らせ等）が
+        # 並ぶことがあるため、レポートは証券コードではなく行ごとに紐付ける。
         for m in matches:
             report = _try_analyze(m)
             if report:
-                analysis_results[m.get("code", "")] = report
+                m["_report"] = report
                 logger.info("業績比較レポート生成: %s", m.get("code", ""))
 
         if self._enabled("desktop"):
             for m in matches:
                 title = f"TDnet: {m['company']}  [{m['matched_keyword']}]"
                 body  = f"{m['time']}  {m['code']}\n{m['title']}"
-                report = analysis_results.get(m.get("code", ""))
+                report = m.get("_report")
                 self._desktop(title, body, [m], report=report)
 
         summary_title = f"TDnet アラート: {len(matches)}件のキーワードマッチ"
@@ -288,7 +289,7 @@ class Notifier:
                 f"\n  キーワード: {r['matched_keyword']}"
                 f"\n  URL: {r['pdf_url']}"
             )
-            report = analysis_results.get(r.get("code", ""))
+            report = r.get("_report")
             if report:
                 part += f"\n\n{report}"
             summary_parts.append(part)
