@@ -126,7 +126,7 @@ def _reorder_report_for_display(report: str) -> str:
     if "📈" not in report or "📅" not in report:
         return report
 
-    sections = re.split(r'(?=━+\n[📈📅])', report)
+    sections = re.split(r'(?=^━+\n[📈📅])', report, flags=re.MULTILINE)
     forecast_sections, other_sections = [], []
     for s in sections:
         lines = s.splitlines()
@@ -144,7 +144,8 @@ def _compact_report_summary(report: str) -> tuple[str, str, str]:
       📈 XQ累計実績      → 四半期: 前年同期比・会予進捗・コンセ進捗
       🔄 業績予想修正     → 修正率・コンセ比
     """
-    if report.startswith("📈"):
+    second_line = report.splitlines()[1] if len(report.splitlines()) > 1 else ""
+    if second_line.startswith("📈"):
         return _compact_quarterly_summary(report)
     if report.startswith("★"):
         return _compact_revision_summary(report)
@@ -200,9 +201,13 @@ def _compact_quarterly_summary(report: str) -> tuple[str, str, str]:
     import re
     short_labels = {"売上高": "売上", "営業利益": "営利", "経常利益": "経常", "純利益": "純利"}
 
+    # 四半期開示に伴う通期予想修正時は「📅 通期予想 vs コンセンサス」節が
+    # 続けて付記されるが、列構成が異なるため累計実績の節のみを対象にする。
+    quarterly_section = re.split(r'(?=📅)', report)[0]
+
     def _extract_col(col_index: int) -> list[str]:
         parts = []
-        for line in report.splitlines():
+        for line in quarterly_section.splitlines():
             s = line.strip()
             for full, short in short_labels.items():
                 if s.startswith(full):

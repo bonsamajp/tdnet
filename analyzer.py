@@ -440,25 +440,40 @@ def build_report(match: dict, actuals: dict, consensus_data: dict, year: str) ->
 
 def build_forecast_report(
     match: dict, forecasts: dict, consensus_data: dict, year: str, label: str = "翌期予想",
+    previous_forecast: dict | None = None,
 ) -> str:
     entry        = consensus_data["years"][year]
     consensus_fc = entry.get("consensus_forecast", {})
     company_name = consensus_data.get("company", match.get("company", ""))
 
+    show_prev = bool(previous_forecast)
+    width     = 70 if show_prev else 56
+
     lines = [
-        "━" * 56,
+        "━" * width,
         f"📅 {label} vs コンセンサス: {company_name} [{match.get('code', '')}]",
         f"   対象年度: {year}",
-        "━" * 56,
-        f"{'項目':<10} {'会社予想':>12} {'コンセンサス比':>14}",
-        "─" * 56,
+        "━" * width,
     ]
-    for key in ITEM_KEYS:
-        fc_val  = forecasts.get(key)
-        n_pct   = _divergence(fc_val, consensus_fc.get(key)) if fc_val is not None else None
-        lines.append(f"{ITEM_LABELS[key]:<10} {_fmt_val(fc_val, key):>12} {_fmt_pct(n_pct):>14}")
+    if show_prev:
+        lines.append(f"{'項目':<10} {'会社予想':>12} {'前回予想比':>10} {'コンセンサス比':>14}")
+    else:
+        lines.append(f"{'項目':<10} {'会社予想':>12} {'コンセンサス比':>14}")
+    lines.append("─" * width)
 
-    lines += ["─" * 56, "━" * 56]
+    for key in ITEM_KEYS:
+        fc_val = forecasts.get(key)
+        n_pct  = _divergence(fc_val, consensus_fc.get(key)) if fc_val is not None else None
+        if show_prev:
+            prev_val = previous_forecast.get(key)
+            p_pct    = _divergence(fc_val, prev_val) if fc_val is not None and prev_val is not None else None
+            lines.append(
+                f"{ITEM_LABELS[key]:<10} {_fmt_val(fc_val, key):>12} {_fmt_pct(p_pct):>10} {_fmt_pct(n_pct):>14}"
+            )
+        else:
+            lines.append(f"{ITEM_LABELS[key]:<10} {_fmt_val(fc_val, key):>12} {_fmt_pct(n_pct):>14}")
+
+    lines += ["─" * width, "━" * width]
     return "\n".join(lines)
 
 
@@ -679,7 +694,8 @@ def analyze(match: dict) -> str | None:
         if annual_fc_xbrl and _forecast_changed(annual_fc_xbrl, registered_fc):
             logger.info("四半期開示に伴う通期予想修正を検知: %s %s", code, year)
             report += "\n" + build_forecast_report(
-                match, annual_fc_xbrl, consensus_data, year, label="通期予想(修正後)"
+                match, annual_fc_xbrl, consensus_data, year, label="通期予想(修正後)",
+                previous_forecast=registered_fc,
             )
             _update_company_forecast(code, year, annual_fc_xbrl)
 
