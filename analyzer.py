@@ -403,8 +403,8 @@ def _fmt_pct(pct: float | None, show_sign: bool = True) -> str:
     if pct is None:
         return "    -  "
     if show_sign:
-        sign = "+" if pct >= 0 else ""
-        return f"{sign}{pct:.1f}%"
+        mark = "△" if pct >= 0 else "▼"
+        return f"{mark}{abs(pct):.1f}%"
     return f"{pct:.1f}%"
 
 
@@ -538,7 +538,7 @@ def build_revision_report(
         pct = _divergence(rev, prev)
         if pct is None:
             continue
-        arrow = "▲" if pct >= 0 else "▼"
+        arrow = "△" if pct >= 0 else "▼"
         summary_parts.append(f"{ITEM_LABELS[key]} {arrow}{abs(pct):.1f}%")
 
     if summary_parts:

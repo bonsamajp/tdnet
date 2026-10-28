@@ -143,11 +143,9 @@ def _compact_annual_summary(report: str) -> tuple[str, str, str]:
             s = line.strip()
             for full, short in short_labels.items():
                 if s.startswith(full):
-                    pcts = re.findall(r'[+\-]\d+\.\d+%', s)
+                    pcts = re.findall(r'[△▼]\d+\.\d+%', s)
                     if col_index < len(pcts):
-                        pct  = pcts[col_index]
-                        sign = "△" if pct.startswith("+") else "▼"
-                        parts.append(f"{short}{sign}{pct[1:]}")
+                        parts.append(f"{short}{pcts[col_index]}")
                     break
         return parts
 
@@ -185,14 +183,9 @@ def _compact_quarterly_summary(report: str) -> tuple[str, str, str]:
             for full, short in short_labels.items():
                 if s.startswith(full):
                     # 数値列: 累計実績 前年同期比 会予進捗 コンセ進捗
-                    nums = re.findall(r'[+\-]?\d+\.?\d*%', s)
+                    nums = re.findall(r'[△▼]?\d+\.?\d*%', s)
                     if col_index < len(nums):
-                        raw  = nums[col_index]
-                        if "+" in raw or "-" in raw:
-                            sign = "△" if raw.startswith("+") else "▼"
-                            parts.append(f"{short}{sign}{raw.lstrip('+-')}")
-                        else:
-                            parts.append(f"{short}{raw}")
+                        parts.append(f"{short}{nums[col_index]}")
                     break
         return parts
 
@@ -212,17 +205,21 @@ def _compact_revision_summary(report: str) -> tuple[str, str, str]:
     short_labels = {"売上高": "売上", "営業利益": "営利", "経常利益": "経常", "純利益": "純利"}
     score_map    = {"売上": 3, "営利": 1, "経常": 1, "純利": 2}
 
+    # ヘッダー部の修正率サマリー行は項目ラベルと%値を含むため、
+    # 詳細テーブル本体（「項目」見出し行より下）だけを対象にする
+    lines = report.splitlines()
+    header_idx = next((i for i, l in enumerate(lines) if l.strip().startswith("項目")), -1)
+    table_lines = lines[header_idx + 1:]
+
     def _extract_col(col_index: int) -> list[str]:
         parts = []
-        for line in report.splitlines():
+        for line in table_lines:
             s = line.strip()
             for full, short in short_labels.items():
                 if s.startswith(full):
-                    pcts = re.findall(r'[+\-]\d+\.\d+%', s)
+                    pcts = re.findall(r'[△▼]\d+\.\d+%', s)
                     if col_index < len(pcts):
-                        pct  = pcts[col_index]
-                        sign = "△" if pct.startswith("+") else "▼"
-                        parts.append(f"{short}{sign}{pct[1:]}")
+                        parts.append(f"{short}{pcts[col_index]}")
                     break
         return parts
 
