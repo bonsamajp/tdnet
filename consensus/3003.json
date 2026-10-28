@@ -14,11 +14,12 @@
     },
     "2026年12月": {
       "company_forecast": {
-        "operating_income": 210000.0,
-        "ordinary_income": 185000.0,
-        "net_income": 121000.0,
-        "eps": 159.34,
-        "dividend": 67.0
+        "operating_income": 217000.0,
+        "ordinary_income": 190000.0,
+        "net_income": 126000.0,
+        "eps": 165.92,
+        "dividend": 67.0,
+        "sales": 900000.0
       },
       "consensus_forecast": {
         "sales": 910614.0,

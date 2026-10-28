@@ -5,10 +5,10 @@
     "2027年03月": {
       "company_forecast": {
         "sales": 150000.0,
-        "operating_income": 11500.0,
-        "ordinary_income": 11900.0,
-        "net_income": 8190.0,
-        "eps": 131.21,
+        "operating_income": 14000.0,
+        "ordinary_income": 14700.0,
+        "net_income": 9500.0,
+        "eps": 153.01,
         "dividend": 38.0
       },
       "consensus_forecast": {
