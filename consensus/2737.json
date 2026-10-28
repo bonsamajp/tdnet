@@ -1,0 +1,16 @@
+{
+  "code": "2737",
+  "company": "トーメンデバ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1400000.0,
+        "operating_income": 48900.0,
+        "ordinary_income": 40800.0,
+        "net_income": 30000.0,
+        "eps": 4411.22,
+        "dividend": 1640.0
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "code": "6501",
+  "company": "日立",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 12822236.0,
+        "operating_income": 1691682.0,
+        "ordinary_income": 1652942.0,
+        "net_income": 1118720.0,
+        "eps": 251.75,
+        "dividend": 67.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 11700000.0,
+        "operating_income": 1408000.0,
+        "ordinary_income": 1335000.0,
+        "net_income": 900000.0,
+        "eps": 201.14
+      },
+      "consensus_forecast": {
+        "sales": 11809435.0,
+        "operating_income": 1465935.0,
+        "ordinary_income": 1416478.0,
+        "net_income": 945219.0,
+        "eps": 212.71,
+        "dividend": 59.0
+      }
+    }
+  }
+}

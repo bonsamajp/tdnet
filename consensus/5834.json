@@ -1,0 +1,16 @@
+{
+  "code": "5834",
+  "company": "Ｇ－ＳＢＩリーシング",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 66000.0,
+        "operating_income": 10400.0,
+        "ordinary_income": 8900.0,
+        "net_income": 6100.0,
+        "eps": 382.88,
+        "dividend": 115.0
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "code": "5992",
+  "company": "中央発条",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 110000.0,
+        "operating_income": 3300.0,
+        "ordinary_income": 3750.0,
+        "net_income": 2400.0,
+        "eps": 95.14,
+        "dividend": 90.0
+      }
+    }
+  }
+}

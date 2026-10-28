@@ -1,0 +1,24 @@
+{
+  "code": "8604",
+  "company": "野村",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 5352050.0,
+        "ordinary_income": 671609.0,
+        "net_income": 454709.0,
+        "eps": 155.58,
+        "dividend": 65.0
+      }
+    },
+    "2027年03月": {
+      "consensus_forecast": {
+        "sales": 5290550.0,
+        "ordinary_income": 677951.0,
+        "net_income": 457675.0,
+        "eps": 156.60,
+        "dividend": 64.0
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "code": "6995",
+  "company": "東海理電",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 684900.0,
+        "operating_income": 37620.0,
+        "ordinary_income": 40840.0,
+        "net_income": 26520.0,
+        "eps": 311.28,
+        "dividend": 130.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 650000.0,
+        "operating_income": 30000.0,
+        "ordinary_income": 33000.0,
+        "net_income": 20000.0,
+        "eps": 234.79,
+        "dividend": 120.0
+      },
+      "consensus_forecast": {
+        "sales": 664916.0,
+        "operating_income": 34295.0,
+        "ordinary_income": 37929.0,
+        "net_income": 24219.0,
+        "eps": 284.28,
+        "dividend": 123.0
+      }
+    }
+  }
+}

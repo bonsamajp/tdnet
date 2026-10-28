@@ -1,0 +1,33 @@
+{
+  "code": "6857",
+  "company": "アドバンテス",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2324811.0,
+        "operating_income": 1215096.0,
+        "ordinary_income": 1219995.0,
+        "net_income": 899476.0,
+        "eps": 1245.89,
+        "dividend": 217.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1714000.0,
+        "operating_income": 846000.0,
+        "ordinary_income": 891000.0,
+        "net_income": 660000.0,
+        "eps": 911.64
+      },
+      "consensus_forecast": {
+        "sales": 1770126.0,
+        "operating_income": 889579.0,
+        "ordinary_income": 916360.0,
+        "net_income": 678746.0,
+        "eps": 940.15,
+        "dividend": 150.0
+      }
+    }
+  }
+}

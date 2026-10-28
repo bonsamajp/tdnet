@@ -1,0 +1,34 @@
+{
+  "code": "6526",
+  "company": "ソシオネクスト",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 279760.0,
+        "operating_income": 29975.0,
+        "ordinary_income": 31750.0,
+        "net_income": 22314.0,
+        "eps": 127.19,
+        "dividend": 53.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 215000.0,
+        "operating_income": 14000.0,
+        "ordinary_income": 14000.0,
+        "net_income": 10000.0,
+        "eps": 57.02,
+        "dividend": 50.0
+      },
+      "consensus_forecast": {
+        "sales": 231057.0,
+        "operating_income": 18574.0,
+        "ordinary_income": 18900.0,
+        "net_income": 13774.0,
+        "eps": 78.51,
+        "dividend": 50.0
+      }
+    }
+  }
+}

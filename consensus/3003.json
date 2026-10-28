@@ -2,17 +2,31 @@
   "code": "3003",
   "company": "ヒューリック",
   "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 970219.0,
+        "operating_income": 229043.0,
+        "ordinary_income": 201453.0,
+        "net_income": 133642.0,
+        "eps": 175.97,
+        "dividend": 74.0
+      }
+    },
     "2026年12月": {
       "company_forecast": {
         "operating_income": 210000.0,
         "ordinary_income": 185000.0,
-        "net_income": 121000.0
+        "net_income": 121000.0,
+        "eps": 159.34,
+        "dividend": 67.0
       },
       "consensus_forecast": {
-        "sales": 879229.0,
-        "operating_income": 210001.0,
-        "ordinary_income": 186806.0,
-        "net_income": 123565.0
+        "sales": 910614.0,
+        "operating_income": 212111.0,
+        "ordinary_income": 188336.0,
+        "net_income": 125144.0,
+        "eps": 164.78,
+        "dividend": 69.0
       }
     }
   }

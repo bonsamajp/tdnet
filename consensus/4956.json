@@ -1,0 +1,24 @@
+{
+  "code": "4956",
+  "company": "コニシ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 150000.0,
+        "operating_income": 11500.0,
+        "ordinary_income": 11900.0,
+        "net_income": 8190.0,
+        "eps": 131.21,
+        "dividend": 38.0
+      },
+      "consensus_forecast": {
+        "sales": 148000.0,
+        "operating_income": 11200.0,
+        "ordinary_income": 11700.0,
+        "net_income": 8400.0,
+        "eps": 126.59,
+        "dividend": 38.0
+      }
+    }
+  }
+}
