@@ -1,0 +1,23 @@
+{
+  "code": "7774",
+  "company": "Ｇ－Ｊ・ＴＥＣ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 3070.0,
+        "operating_income": 100.0,
+        "ordinary_income": 110.0,
+        "net_income": 100.0,
+        "eps": 2.46,
+        "dividend": 0.0
+      },
+      "consensus_forecast": {
+        "sales": 5046.0,
+        "operating_income": 1230.0,
+        "ordinary_income": 1230.0,
+        "net_income": 1132.0,
+        "eps": 27.87
+      }
+    }
+  }
+}

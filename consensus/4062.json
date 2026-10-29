@@ -1,0 +1,34 @@
+{
+  "code": "4062",
+  "company": "イビデン",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 692583.0,
+        "operating_income": 187036.0,
+        "ordinary_income": 185776.0,
+        "net_income": 128691.0,
+        "eps": 227.56,
+        "dividend": 34.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 565000.0,
+        "operating_income": 133000.0,
+        "ordinary_income": 134500.0,
+        "net_income": 89000.0,
+        "eps": 157.17,
+        "dividend": 25.0
+      },
+      "consensus_forecast": {
+        "sales": 550570.0,
+        "operating_income": 127206.0,
+        "ordinary_income": 128174.0,
+        "net_income": 86941.0,
+        "eps": 153.74,
+        "dividend": 21.0
+      }
+    }
+  }
+}
