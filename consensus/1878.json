@@ -1,0 +1,34 @@
+{
+  "code": "1878",
+  "company": "大東建託",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2134679.0,
+        "operating_income": 182386.0,
+        "ordinary_income": 153553.0,
+        "net_income": 109067.0,
+        "eps": 334.35,
+        "dividend": 169.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2050000.0,
+        "operating_income": 142000.0,
+        "ordinary_income": 140000.0,
+        "net_income": 108000.0,
+        "eps": 326.00,
+        "dividend": 163.0
+      },
+      "consensus_forecast": {
+        "sales": 2059850.0,
+        "operating_income": 144000.0,
+        "ordinary_income": 143721.0,
+        "net_income": 109036.0,
+        "eps": 334.26,
+        "dividend": 167.0
+      }
+    }
+  }
+}

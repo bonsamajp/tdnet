@@ -1,0 +1,16 @@
+{
+  "code": "9934",
+  "company": "因幡電産",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 436000.0,
+        "operating_income": 32900.0,
+        "ordinary_income": 34400.0,
+        "net_income": 23700.0,
+        "eps": 211.13,
+        "dividend": 85.0
+      }
+    }
+  }
+}

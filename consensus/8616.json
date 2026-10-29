@@ -2,12 +2,24 @@
   "code": "8616",
   "company": "東海東京",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 101600.0,
+        "operating_income": 20450.0,
+        "ordinary_income": 23100.0,
+        "net_income": 15300.0,
+        "eps": 60.28,
+        "dividend": 32.0
+      }
+    },
     "2027年03月": {
       "consensus_forecast": {
-        "sales": 97716.0,
-        "operating_income": 17250.0,
+        "sales": 98700.0,
+        "operating_income": 21250.0,
         "ordinary_income": 21100.0,
-        "net_income": 13150.0
+        "net_income": 17150.0,
+        "eps": 67.57,
+        "dividend": 30.0
       }
     }
   }
