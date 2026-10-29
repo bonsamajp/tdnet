@@ -1,0 +1,33 @@
+{
+  "code": "6702",
+  "company": "富士通",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 3688739.0,
+        "operating_income": 471062.0,
+        "ordinary_income": 486493.0,
+        "net_income": 352034.0,
+        "eps": 204.01,
+        "dividend": 60.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 3510000.0,
+        "operating_income": 415000.0,
+        "net_income": 310000.0,
+        "eps": 182.43,
+        "dividend": 55.0
+      },
+      "consensus_forecast": {
+        "sales": 3546143.0,
+        "operating_income": 415523.0,
+        "ordinary_income": 424450.0,
+        "net_income": 306047.0,
+        "eps": 177.36,
+        "dividend": 54.0
+      }
+    }
+  }
+}
