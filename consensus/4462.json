@@ -1,0 +1,16 @@
+{
+  "code": "4462",
+  "company": "石原ケミカル",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 25600.0,
+        "operating_income": 3760.0,
+        "ordinary_income": 3850.0,
+        "net_income": 2760.0,
+        "eps": 201.86,
+        "dividend": 48.0
+      }
+    }
+  }
+}
