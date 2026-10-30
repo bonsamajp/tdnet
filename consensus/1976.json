@@ -1,0 +1,16 @@
+{
+  "code": "1976",
+  "company": "明星工業",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 61000.0,
+        "operating_income": 7000.0,
+        "ordinary_income": 7650.0,
+        "net_income": 5600.0,
+        "eps": 122.00,
+        "dividend": 65.0
+      }
+    }
+  }
+}

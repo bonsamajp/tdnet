@@ -2,17 +2,32 @@
   "code": "4578",
   "company": "大塚",
   "years": {
-    "2027年03月": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 2821233.0,
+        "operating_income": 498011.0,
+        "ordinary_income": 503202.0,
+        "net_income": 379595.0,
+        "eps": 724.54,
+        "dividend": 208.0
+      }
+    },
+    "2026年12月": {
       "company_forecast": {
-        "sales": 2520000.0,
-        "operating_income": 360000.0,
-        "net_income": 265000.0
+        "sales": 2725000.0,
+        "operating_income": 469000.0,
+        "ordinary_income": 472000.0,
+        "net_income": 355000.0,
+        "eps": 675.47,
+        "dividend": 200.0
       },
       "consensus_forecast": {
-        "sales": 2605836.0,
-        "operating_income": 421276.0,
-        "ordinary_income": 423653.0,
-        "net_income": 320307.0
+        "sales": 2753641.0,
+        "operating_income": 490553.0,
+        "ordinary_income": 499796.0,
+        "net_income": 374619.0,
+        "eps": 715.05,
+        "dividend": 194.0
       }
     }
   }

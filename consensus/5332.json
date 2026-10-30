@@ -2,18 +2,32 @@
   "code": "5332",
   "company": "TOTO",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 824150.0,
+        "operating_income": 78438.0,
+        "ordinary_income": 78486.0,
+        "net_income": 58059.0,
+        "eps": 353.04,
+        "dividend": 152.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 785000.0,
         "operating_income": 60000.0,
         "ordinary_income": 58500.0,
-        "net_income": 46000.0
+        "net_income": 46000.0,
+        "eps": 279.78,
+        "dividend": 120.0
       },
       "consensus_forecast": {
-        "sales": 784725.0,
-        "operating_income": 61938.0,
-        "ordinary_income": 63413.0,
-        "net_income": 47882.0
+        "sales": 783425.0,
+        "operating_income": 61438.0,
+        "ordinary_income": 63029.0,
+        "net_income": 47795.0,
+        "eps": 290.63,
+        "dividend": 121.0
       }
     }
   }

@@ -2,18 +2,32 @@
   "code": "6302",
   "company": "住友重機",
   "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 1190200.0,
+        "operating_income": 80867.0,
+        "ordinary_income": 76500.0,
+        "net_income": 52067.0,
+        "eps": 439.03,
+        "dividend": 153.0
+      }
+    },
     "2026年12月": {
       "company_forecast": {
-        "sales": 1090000.0,
-        "operating_income": 60000.0,
-        "ordinary_income": 55000.0,
-        "net_income": 34000.0
+        "sales": 1120000.0,
+        "operating_income": 68000.0,
+        "ordinary_income": 62000.0,
+        "net_income": 35000.0,
+        "eps": 294.45,
+        "dividend": 145.0
       },
       "consensus_forecast": {
-        "sales": 1087233.0,
-        "operating_income": 58933.0,
-        "ordinary_income": 53933.0,
-        "net_income": 33300.0
+        "sales": 1131500.0,
+        "operating_income": 71733.0,
+        "ordinary_income": 66067.0,
+        "net_income": 41167.0,
+        "eps": 347.12,
+        "dividend": 145.0
       }
     }
   }

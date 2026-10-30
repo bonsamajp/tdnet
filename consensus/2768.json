@@ -2,14 +2,27 @@
   "code": "2768",
   "company": "双日",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 3131113.0,
+        "ordinary_income": 176540.0,
+        "net_income": 138936.0,
+        "eps": 667.75,
+        "dividend": 200.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "net_income": 130000.0
+        "net_income": 130000.0,
+        "eps": 622.55,
+        "dividend": 180.0
       },
       "consensus_forecast": {
-        "sales": 3018458.0,
-        "ordinary_income": 161230.0,
-        "net_income": 128582.0
+        "sales": 3063483.0,
+        "ordinary_income": 167339.0,
+        "net_income": 131227.0,
+        "eps": 630.70,
+        "dividend": 183.0
       }
     }
   }

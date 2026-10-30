@@ -2,18 +2,32 @@
   "code": "6981",
   "company": "村田",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2557758.0,
+        "operating_income": 685399.0,
+        "ordinary_income": 684246.0,
+        "net_income": 523678.0,
+        "eps": 289.34,
+        "dividend": 83.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "sales": 1960000.0,
-        "operating_income": 380000.0,
-        "ordinary_income": 390000.0,
-        "net_income": 293000.0
+        "sales": 2110000.0,
+        "operating_income": 430000.0,
+        "ordinary_income": 451000.0,
+        "net_income": 338000.0,
+        "eps": 185.68,
+        "dividend": 70.0
       },
       "consensus_forecast": {
-        "sales": 2030393.0,
-        "operating_income": 429853.0,
-        "ordinary_income": 440919.0,
-        "net_income": 334143.0
+        "sales": 2166700.0,
+        "operating_income": 473074.0,
+        "ordinary_income": 488669.0,
+        "net_income": 368909.0,
+        "eps": 203.83,
+        "dividend": 71.0
       }
     }
   }

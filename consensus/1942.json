@@ -2,18 +2,32 @@
   "code": "1942",
   "company": "関電工",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 843000.0,
+        "operating_income": 109550.0,
+        "ordinary_income": 111188.0,
+        "net_income": 76288.0,
+        "eps": 383.32,
+        "dividend": 163.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 780000.0,
         "operating_income": 90000.0,
         "ordinary_income": 90500.0,
-        "net_income": 65000.0
+        "net_income": 65000.0,
+        "eps": 326.61,
+        "dividend": 130.0
       },
       "consensus_forecast": {
-        "sales": 788313.0,
-        "operating_income": 95188.0,
-        "ordinary_income": 96763.0,
-        "net_income": 69488.0
+        "sales": 786813.0,
+        "operating_income": 97000.0,
+        "ordinary_income": 98575.0,
+        "net_income": 70775.0,
+        "eps": 355.62,
+        "dividend": 142.0
       }
     }
   }

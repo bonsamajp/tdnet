@@ -1,0 +1,34 @@
+{
+  "code": "9020",
+  "company": "JR東日本",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 3479880.0,
+        "operating_income": 494084.0,
+        "ordinary_income": 420203.0,
+        "net_income": 294225.0,
+        "eps": 260.59,
+        "dividend": 104.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 3295000.0,
+        "operating_income": 429000.0,
+        "ordinary_income": 353000.0,
+        "net_income": 255000.0,
+        "eps": 225.85,
+        "dividend": 84.0
+      },
+      "consensus_forecast": {
+        "sales": 3314106.0,
+        "operating_income": 452651.0,
+        "ordinary_income": 380073.0,
+        "net_income": 271046.0,
+        "eps": 240.06,
+        "dividend": 88.0
+      }
+    }
+  }
+}

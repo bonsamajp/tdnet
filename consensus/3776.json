@@ -1,0 +1,16 @@
+{
+  "code": "3776",
+  "company": "ＢＢタワー",
+  "years": {
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 14000.0,
+        "operating_income": 805.0,
+        "ordinary_income": 900.0,
+        "net_income": 480.0,
+        "eps": 7.78,
+        "dividend": 2.0
+      }
+    }
+  }
+}

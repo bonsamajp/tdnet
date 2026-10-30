@@ -1,0 +1,24 @@
+{
+  "code": "7741",
+  "company": "ＨＯＹＡ",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1134014.0,
+        "ordinary_income": 405659.0,
+        "net_income": 312361.0,
+        "eps": 939.35,
+        "dividend": 377.0
+      }
+    },
+    "2027年03月": {
+      "consensus_forecast": {
+        "sales": 1050693.0,
+        "ordinary_income": 357219.0,
+        "net_income": 276786.0,
+        "eps": 832.37,
+        "dividend": 331.0
+      }
+    }
+  }
+}

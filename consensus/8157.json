@@ -1,0 +1,16 @@
+{
+  "code": "8157",
+  "company": "都築電気",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 107000.0,
+        "operating_income": 8700.0,
+        "ordinary_income": 8700.0,
+        "net_income": 5750.0,
+        "eps": 315.64,
+        "dividend": 190.0
+      }
+    }
+  }
+}
