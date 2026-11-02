@@ -1,0 +1,24 @@
+{
+  "code": "8473",
+  "company": "SBIホールディングス",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1811548.0,
+        "ordinary_income": 378661.0,
+        "net_income": 222787.0,
+        "eps": 344.64,
+        "dividend": 132.0
+      }
+    },
+    "2027年03月": {
+      "consensus_forecast": {
+        "sales": 1922972.0,
+        "ordinary_income": 728562.0,
+        "net_income": 477037.0,
+        "eps": 737.95,
+        "dividend": 122.0
+      }
+    }
+  }
+}

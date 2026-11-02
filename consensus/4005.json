@@ -2,17 +2,31 @@
   "code": "4005",
   "company": "住友化学",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2458219.0,
+        "operating_income": 213855.0,
+        "ordinary_income": 191380.0,
+        "net_income": 92936.0,
+        "eps": 55.90,
+        "dividend": 19.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 2360000.0,
         "operating_income": 177000.0,
-        "net_income": 70000.0
+        "net_income": 70000.0,
+        "eps": 42.40,
+        "dividend": 16.0
       },
       "consensus_forecast": {
-        "sales": 2453417.0,
-        "operating_income": 192436.0,
-        "ordinary_income": 171440.0,
-        "net_income": 80718.0
+        "sales": 2447699.0,
+        "operating_income": 222209.0,
+        "ordinary_income": 201620.0,
+        "net_income": 102200.0,
+        "eps": 61.47,
+        "dividend": 17.0
       }
     }
   }

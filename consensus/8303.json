@@ -1,0 +1,25 @@
+{
+  "code": "8303",
+  "company": "新生銀行",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "ordinary_income": 133700.0,
+        "net_income": 104933.0,
+        "eps": 118.30,
+        "dividend": 46.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "dividend": 42.0
+      },
+      "consensus_forecast": {
+        "ordinary_income": 132400.0,
+        "net_income": 102633.0,
+        "eps": 115.71,
+        "dividend": 43.0
+      }
+    }
+  }
+}

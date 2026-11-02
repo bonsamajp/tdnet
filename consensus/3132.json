@@ -1,0 +1,34 @@
+{
+  "code": "3132",
+  "company": "マクニカホールディングス",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1650360.0,
+        "operating_income": 74205.0,
+        "ordinary_income": 69705.0,
+        "net_income": 49260.0,
+        "eps": 275.73,
+        "dividend": 118.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1300000.0,
+        "operating_income": 52000.0,
+        "ordinary_income": 47000.0,
+        "net_income": 32000.0,
+        "eps": 179.21,
+        "dividend": 80.0
+      },
+      "consensus_forecast": {
+        "sales": 1556345.0,
+        "operating_income": 63505.0,
+        "ordinary_income": 59780.0,
+        "net_income": 42340.0,
+        "eps": 236.99,
+        "dividend": 100.0
+      }
+    }
+  }
+}

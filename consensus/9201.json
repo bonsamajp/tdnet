@@ -1,0 +1,31 @@
+{
+  "code": "9201",
+  "company": "日本航空",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2243909.0,
+        "operating_income": 194200.0,
+        "ordinary_income": 195693.0,
+        "net_income": 128610.0,
+        "eps": 299.13,
+        "dividend": 105.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2095000.0,
+        "net_income": 110000.0,
+        "dividend": 96.0
+      },
+      "consensus_forecast": {
+        "sales": 2188464.0,
+        "operating_income": 151267.0,
+        "ordinary_income": 145480.0,
+        "net_income": 93896.0,
+        "eps": 218.39,
+        "dividend": 96.0
+      }
+    }
+  }
+}

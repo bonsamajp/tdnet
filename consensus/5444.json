@@ -1,0 +1,34 @@
+{
+  "code": "5444",
+  "company": "大和工業",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 182895.0,
+        "operating_income": 5915.0,
+        "ordinary_income": 94615.0,
+        "net_income": 66765.0,
+        "eps": 1117.33,
+        "dividend": 402.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 178000.0,
+        "operating_income": 3200.0,
+        "ordinary_income": 87000.0,
+        "net_income": 57500.0,
+        "eps": 962.30,
+        "dividend": 400.0
+      },
+      "consensus_forecast": {
+        "sales": 174335.0,
+        "operating_income": 2518.0,
+        "ordinary_income": 88318.0,
+        "net_income": 60543.0,
+        "eps": 1013.20,
+        "dividend": 396.0
+      }
+    }
+  }
+}

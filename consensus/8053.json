@@ -2,14 +2,27 @@
   "code": "8053",
   "company": "住友商事",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 8174160.0,
+        "ordinary_income": 853508.0,
+        "net_income": 694646.0,
+        "eps": 147.02,
+        "dividend": 45.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "net_income": 630000.0
+        "net_income": 630000.0,
+        "eps": 132.54,
+        "dividend": 40.0
       },
       "consensus_forecast": {
-        "sales": 7737482.0,
-        "ordinary_income": 789469.0,
-        "net_income": 643123.0
+        "sales": 7955830.0,
+        "ordinary_income": 798807.0,
+        "net_income": 663092.0,
+        "eps": 140.34,
+        "dividend": 41.0
       }
     }
   }
