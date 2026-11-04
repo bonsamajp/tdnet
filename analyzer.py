@@ -238,7 +238,8 @@ def _extract_year_from_title(title: str) -> str | None:
         return f"{m.group(1)}年{m.group(2).zfill(2)}月"
     m = re.search(r"(\d{4})年度", title)
     if m:
-        return f"{m.group(1)}年03月"
+        # 「YYYY年度」は4月始まり・翌年3月期末を指す（例: 2026年度 = 2027年3月期）
+        return f"{int(m.group(1)) + 1}年03月"
     return None
 
 
