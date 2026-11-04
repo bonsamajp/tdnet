@@ -1,0 +1,34 @@
+{
+  "code": "9432",
+  "company": "日本電信電話",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 15783323.0,
+        "operating_income": 1868515.0,
+        "ordinary_income": 1653105.0,
+        "net_income": 1094801.0,
+        "eps": 13.53,
+        "dividend": 6.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 15080000.0,
+        "operating_income": 1730000.0,
+        "ordinary_income": 1520000.0,
+        "net_income": 994000.0,
+        "eps": 12.2,
+        "dividend": 5.0
+      },
+      "consensus_forecast": {
+        "sales": 15200969.0,
+        "operating_income": 1743209.0,
+        "ordinary_income": 1549421.0,
+        "net_income": 1022717.0,
+        "eps": 12.64,
+        "dividend": 5.0
+      }
+    }
+  }
+}

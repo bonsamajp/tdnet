@@ -1,0 +1,33 @@
+{
+  "code": "6366",
+  "company": "千代田化工建設",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 342400.0,
+        "operating_income": 17433.0,
+        "ordinary_income": 23600.0,
+        "net_income": 18863.0,
+        "eps": 72.78,
+        "dividend": 0.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 400000.0,
+        "operating_income": 26500.0,
+        "ordinary_income": 32000.0,
+        "net_income": 28000.0,
+        "eps": 88.42
+      },
+      "consensus_forecast": {
+        "sales": 358800.0,
+        "operating_income": 15683.0,
+        "ordinary_income": 21850.0,
+        "net_income": 17620.0,
+        "eps": 67.98,
+        "dividend": 0.0
+      }
+    }
+  }
+}

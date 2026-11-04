@@ -2,17 +2,31 @@
   "code": "4091",
   "company": "日本酸素",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1516615.0,
+        "operating_income": 228400.0,
+        "ordinary_income": 207784.0,
+        "net_income": 143774.0,
+        "eps": 332.16,
+        "dividend": 72.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 1380000.0,
         "operating_income": 215000.0,
-        "net_income": 131000.0
+        "net_income": 131000.0,
+        "eps": 302.64,
+        "dividend": 66.0
       },
       "consensus_forecast": {
-        "sales": 1431877.0,
-        "operating_income": 220900.0,
-        "ordinary_income": 199325.0,
-        "net_income": 138459.0
+        "sales": 1465384.0,
+        "operating_income": 227900.0,
+        "ordinary_income": 204950.0,
+        "net_income": 142313.0,
+        "eps": 328.78,
+        "dividend": 67.0
       }
     }
   }

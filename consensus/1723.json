@@ -1,0 +1,34 @@
+{
+  "code": "1723",
+  "company": "日本電技",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 54000.0,
+        "operating_income": 14500.0,
+        "ordinary_income": 14500.0,
+        "net_income": 10000.0,
+        "eps": 156.89,
+        "dividend": 63.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 51500.0,
+        "operating_income": 12500.0,
+        "ordinary_income": 12700.0,
+        "net_income": 8700.0,
+        "eps": 136.51,
+        "dividend": 56.0
+      },
+      "consensus_forecast": {
+        "sales": 50000.0,
+        "operating_income": 13000.0,
+        "ordinary_income": 13000.0,
+        "net_income": 9000.0,
+        "eps": 141.20,
+        "dividend": 56.0
+      }
+    }
+  }
+}

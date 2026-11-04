@@ -1,0 +1,34 @@
+{
+  "code": "9412",
+  "company": "スカパーJSATホールディングス",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 143765.0,
+        "operating_income": 41498.0,
+        "ordinary_income": 42046.0,
+        "net_income": 28601.0,
+        "eps": 100.88,
+        "dividend": 51.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 135000.0,
+        "operating_income": 39000.0,
+        "ordinary_income": 39000.0,
+        "net_income": 27000.0,
+        "eps": 95.26,
+        "dividend": 48.0
+      },
+      "consensus_forecast": {
+        "sales": 137057.0,
+        "operating_income": 40553.0,
+        "ordinary_income": 40422.0,
+        "net_income": 28200.0,
+        "eps": 99.46,
+        "dividend": 48.0
+      }
+    }
+  }
+}

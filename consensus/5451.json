@@ -1,0 +1,16 @@
+{
+  "code": "5451",
+  "company": "淀川製鋼所",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 212000.0,
+        "operating_income": 12900.0,
+        "ordinary_income": 14900.0,
+        "net_income": 11800.0,
+        "eps": 82.37,
+        "dividend": 62.0
+      }
+    }
+  }
+}

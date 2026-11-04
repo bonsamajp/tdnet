@@ -1,0 +1,29 @@
+{
+  "code": "8031",
+  "company": "三井物産",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 16017435.0,
+        "ordinary_income": 1354118.0,
+        "net_income": 1038071.0,
+        "eps": 367.26,
+        "dividend": 152.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 1050000.0,
+        "eps": 372.39,
+        "dividend": 140.0
+      },
+      "consensus_forecast": {
+        "sales": 15777431.0,
+        "ordinary_income": 1330445.0,
+        "net_income": 1017150.0,
+        "eps": 359.85,
+        "dividend": 142.0
+      }
+    }
+  }
+}

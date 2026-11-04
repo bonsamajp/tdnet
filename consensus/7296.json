@@ -1,0 +1,34 @@
+{
+  "code": "7296",
+  "company": "エフ・シー・シー",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 284260.0,
+        "operating_income": 27060.0,
+        "ordinary_income": 30605.0,
+        "net_income": 21993.0,
+        "eps": 463.52,
+        "dividend": 223.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 265000.0,
+        "operating_income": 22000.0,
+        "ordinary_income": 24000.0,
+        "net_income": 17000.0,
+        "eps": 356.43,
+        "dividend": 180.0
+      },
+      "consensus_forecast": {
+        "sales": 277640.0,
+        "operating_income": 25780.0,
+        "ordinary_income": 29230.0,
+        "net_income": 21105.0,
+        "eps": 444.81,
+        "dividend": 210.0
+      }
+    }
+  }
+}

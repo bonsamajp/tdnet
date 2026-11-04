@@ -2,18 +2,32 @@
   "code": "7013",
   "company": "IHI",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1963155.0,
+        "operating_income": 224218.0,
+        "ordinary_income": 225027.0,
+        "net_income": 159773.0,
+        "eps": 150.71,
+        "dividend": 29.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "sales": 1830000.0,
-        "operating_income": 240000.0,
-        "ordinary_income": 230000.0,
-        "net_income": 165000.0
+        "sales": 1840000.0,
+        "operating_income": 270000.0,
+        "ordinary_income": 260000.0,
+        "net_income": 185000.0,
+        "eps": 173.88,
+        "dividend": 23.0
       },
       "consensus_forecast": {
-        "sales": 1838067.0,
-        "operating_income": 247258.0,
-        "ordinary_income": 245258.0,
-        "net_income": 174858.0
+        "sales": 1859509.0,
+        "operating_income": 257955.0,
+        "ordinary_income": 258800.0,
+        "net_income": 184155.0,
+        "eps": 173.7,
+        "dividend": 25.0
       }
     }
   }

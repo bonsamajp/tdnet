@@ -2,14 +2,27 @@
   "code": "8058",
   "company": "三菱商事",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 21416079.0,
+        "ordinary_income": 1601500.0,
+        "net_income": 1154654.0,
+        "eps": 315.25,
+        "dividend": 134.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "net_income": 1100000.0
+        "net_income": 1100000.0,
+        "eps": 300.42,
+        "dividend": 125.0
       },
       "consensus_forecast": {
-        "sales": 20941967.0,
-        "ordinary_income": 1565215.0,
-        "net_income": 1152846.0
+        "sales": 21097583.0,
+        "ordinary_income": 1624019.0,
+        "net_income": 1186346.0,
+        "eps": 323.90,
+        "dividend": 127.0
       }
     }
   }
