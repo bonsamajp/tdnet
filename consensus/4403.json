@@ -1,0 +1,34 @@
+{
+  "code": "4403",
+  "company": "日油",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 331600.0,
+        "operating_income": 57675.0,
+        "ordinary_income": 59150.0,
+        "net_income": 44975.0,
+        "eps": 201.77,
+        "dividend": 83.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 319000.0,
+        "operating_income": 50000.0,
+        "ordinary_income": 51000.0,
+        "net_income": 39000.0,
+        "eps": 169.60,
+        "dividend": 70.0
+      },
+      "consensus_forecast": {
+        "sales": 316850.0,
+        "operating_income": 53375.0,
+        "ordinary_income": 54975.0,
+        "net_income": 41900.0,
+        "eps": 187.98,
+        "dividend": 71.0
+      }
+    }
+  }
+}

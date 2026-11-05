@@ -1,0 +1,34 @@
+{
+  "code": "9303",
+  "company": "住友倉庫",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 208050.0,
+        "operating_income": 13325.0,
+        "ordinary_income": 17275.0,
+        "net_income": 17475.0,
+        "eps": 231.80,
+        "dividend": 105.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 200000.0,
+        "operating_income": 12200.0,
+        "ordinary_income": 16100.0,
+        "net_income": 17200.0,
+        "eps": 228.68,
+        "dividend": 103.0
+      },
+      "consensus_forecast": {
+        "sales": 203050.0,
+        "operating_income": 12850.0,
+        "ordinary_income": 16950.0,
+        "net_income": 18125.0,
+        "eps": 240.43,
+        "dividend": 104.0
+      }
+    }
+  }
+}

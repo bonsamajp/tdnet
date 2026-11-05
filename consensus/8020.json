@@ -1,0 +1,34 @@
+{
+  "code": "8020",
+  "company": "兼松",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1155000.0,
+        "operating_income": 59200.0,
+        "ordinary_income": 57267.0,
+        "net_income": 39633.0,
+        "eps": 238.17,
+        "dividend": 83.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1100000.0,
+        "operating_income": 54000.0,
+        "ordinary_income": 50000.0,
+        "net_income": 35000.0,
+        "eps": 210.41,
+        "dividend": 70.0
+      },
+      "consensus_forecast": {
+        "sales": 1112500.0,
+        "operating_income": 56700.0,
+        "ordinary_income": 54633.0,
+        "net_income": 38200.0,
+        "eps": 229.55,
+        "dividend": 75.0
+      }
+    }
+  }
+}

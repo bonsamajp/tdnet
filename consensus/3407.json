@@ -2,18 +2,32 @@
   "code": "3407",
   "company": "旭化成",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 3400460.0,
+        "operating_income": 286102.0,
+        "ordinary_income": 285075.0,
+        "net_income": 185792.0,
+        "eps": 139.32,
+        "dividend": 50.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 3254000.0,
         "operating_income": 248000.0,
         "ordinary_income": 247500.0,
-        "net_income": 160000.0
+        "net_income": 160000.0,
+        "eps": 119.65,
+        "dividend": 44.0
       },
       "consensus_forecast": {
-        "sales": 3282936.0,
-        "operating_income": 255282.0,
-        "ordinary_income": 255850.0,
-        "net_income": 165920.0
+        "sales": 3329553.0,
+        "operating_income": 272902.0,
+        "ordinary_income": 271208.0,
+        "net_income": 174625.0,
+        "eps": 130.94,
+        "dividend": 46.0
       }
     }
   }

@@ -1,0 +1,34 @@
+{
+  "code": "3941",
+  "company": "レンゴー",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1106800.0,
+        "operating_income": 52560.0,
+        "ordinary_income": 52480.0,
+        "net_income": 34620.0,
+        "eps": 144.90,
+        "dividend": 59.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1090000.0,
+        "operating_income": 46000.0,
+        "ordinary_income": 44000.0,
+        "net_income": 31000.0,
+        "eps": 125.78,
+        "dividend": 50.0
+      },
+      "consensus_forecast": {
+        "sales": 1082275.0,
+        "operating_income": 46540.0,
+        "ordinary_income": 45660.0,
+        "net_income": 30760.0,
+        "eps": 128.75,
+        "dividend": 52.0
+      }
+    }
+  }
+}

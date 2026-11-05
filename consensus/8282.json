@@ -1,0 +1,34 @@
+{
+  "code": "8282",
+  "company": "ケーズホールディングス",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 794120.0,
+        "operating_income": 29961.0,
+        "ordinary_income": 33940.0,
+        "net_income": 19701.0,
+        "eps": 127.48,
+        "dividend": 57.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 790000.0,
+        "operating_income": 30500.0,
+        "ordinary_income": 33500.0,
+        "net_income": 20000.0,
+        "eps": 129.41,
+        "dividend": 48.0
+      },
+      "consensus_forecast": {
+        "sales": 813020.0,
+        "operating_income": 39740.0,
+        "ordinary_income": 43780.0,
+        "net_income": 26120.0,
+        "eps": 169.01,
+        "dividend": 57.0
+      }
+    }
+  }
+}

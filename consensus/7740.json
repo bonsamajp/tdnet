@@ -1,0 +1,34 @@
+{
+  "code": "7740",
+  "company": "タムロン",
+  "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 96500.0,
+        "operating_income": 18900.0,
+        "ordinary_income": 19600.0,
+        "net_income": 14000.0,
+        "eps": 86.82,
+        "dividend": 48.0
+      }
+    },
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 93000.0,
+        "operating_income": 18500.0,
+        "ordinary_income": 18500.0,
+        "net_income": 13690.0,
+        "eps": 84.91,
+        "dividend": 51.0
+      },
+      "consensus_forecast": {
+        "sales": 92700.0,
+        "operating_income": 18300.0,
+        "ordinary_income": 18600.0,
+        "net_income": 13400.0,
+        "eps": 83.10,
+        "dividend": 44.0
+      }
+    }
+  }
+}

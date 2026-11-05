@@ -1,0 +1,34 @@
+{
+  "code": "4042",
+  "company": "東ソー",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1186497.0,
+        "operating_income": 116656.0,
+        "ordinary_income": 118915.0,
+        "net_income": 64232.0,
+        "eps": 208.56,
+        "dividend": 105.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1170000.0,
+        "operating_income": 105000.0,
+        "ordinary_income": 107000.0,
+        "net_income": 59000.0,
+        "eps": 191.63,
+        "dividend": 100.0
+      },
+      "consensus_forecast": {
+        "sales": 1151051.0,
+        "operating_income": 109537.0,
+        "ordinary_income": 111594.0,
+        "net_income": 61165.0,
+        "eps": 198.60,
+        "dividend": 100.0
+      }
+    }
+  }
+}

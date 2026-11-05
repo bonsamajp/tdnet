@@ -1,0 +1,34 @@
+{
+  "code": "8111",
+  "company": "ゴールドウイン",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 149764.0,
+        "operating_income": 25880.0,
+        "ordinary_income": 34334.0,
+        "net_income": 25484.0,
+        "eps": 186.27,
+        "dividend": 71.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 145400.0,
+        "operating_income": 26100.0,
+        "ordinary_income": 34100.0,
+        "net_income": 25600.0,
+        "eps": 187.16,
+        "dividend": 70.0
+      },
+      "consensus_forecast": {
+        "sales": 140375.0,
+        "operating_income": 23209.0,
+        "ordinary_income": 31743.0,
+        "net_income": 23706.0,
+        "eps": 173.28,
+        "dividend": 68.0
+      }
+    }
+  }
+}

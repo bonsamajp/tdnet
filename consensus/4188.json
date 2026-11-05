@@ -2,18 +2,31 @@
   "code": "4188",
   "company": "三菱ケミカル",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 4097566.0,
+        "operating_income": 350734.0,
+        "ordinary_income": 322451.0,
+        "net_income": 156331.0,
+        "eps": 115.06,
+        "dividend": 38.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 3800000.0,
         "operating_income": 300000.0,
-        "ordinary_income": 270000.0,
-        "net_income": 127000.0
+        "net_income": 127000.0,
+        "eps": 93.48,
+        "dividend": 32.0
       },
       "consensus_forecast": {
-        "sales": 3959897.0,
-        "operating_income": 293274.0,
-        "ordinary_income": 264431.0,
-        "net_income": 119362.0
+        "sales": 4069497.0,
+        "operating_income": 339077.0,
+        "ordinary_income": 310418.0,
+        "net_income": 148035.0,
+        "eps": 108.95,
+        "dividend": 34.0
       }
     }
   }

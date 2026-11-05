@@ -2,18 +2,32 @@
   "code": "6703",
   "company": "沖電気",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 456098.0,
+        "operating_income": 25404.0,
+        "ordinary_income": 25404.0,
+        "net_income": 19838.0,
+        "eps": 228.69,
+        "dividend": 72.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 440000.0,
         "operating_income": 22000.0,
         "ordinary_income": 22000.0,
-        "net_income": 18000.0
+        "net_income": 18000.0,
+        "eps": 207.52,
+        "dividend": 65.0
       },
       "consensus_forecast": {
         "sales": 438970.0,
-        "operating_income": 22051.0,
-        "ordinary_income": 22051.0,
-        "net_income": 18176.0
+        "operating_income": 21282.0,
+        "ordinary_income": 21282.0,
+        "net_income": 17607.0,
+        "eps": 202.98,
+        "dividend": 67.0
       }
     }
   }

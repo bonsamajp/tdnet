@@ -1,15 +1,33 @@
 {
   "code": "7203",
-  "company": "toyota",
+  "company": "トヨタ自動車",
   "years": {
-    "2027年03月": {
+    "2028年03月": {
       "consensus_forecast": {
-        "sales": 52875837.0,
-        "operating_income": 4579359.0,
-        "ordinary_income": 5625956.0,
-        "net_income": 4038486.0,
-        "eps": 309.86,
-        "dividend": 108.0
+        "sales": 55800569.0,
+        "operating_income": 4502204.0,
+        "ordinary_income": 5685668.0,
+        "net_income": 4044208.0,
+        "eps": 343.37,
+        "dividend": 116.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 54000000.0,
+        "operating_income": 3400000.0,
+        "ordinary_income": 4570000.0,
+        "net_income": 3250000.0,
+        "eps": 272.17,
+        "dividend": 100.0
+      },
+      "consensus_forecast": {
+        "sales": 53976951.0,
+        "operating_income": 3854822.0,
+        "ordinary_income": 5226727.0,
+        "net_income": 3751231.0,
+        "eps": 318.49,
+        "dividend": 103.0
       }
     },
     "2026年03月": {
