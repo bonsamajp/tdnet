@@ -1,0 +1,34 @@
+{
+  "code": "6525",
+  "company": "KOKUSAI ELECTRIC",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 442558.0,
+        "operating_income": 121609.0,
+        "ordinary_income": 123567.0,
+        "net_income": 87363.0,
+        "eps": 374.62,
+        "dividend": 100.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 340000.0,
+        "operating_income": 79400.0,
+        "ordinary_income": 78300.0,
+        "net_income": 55500.0,
+        "eps": 237.63,
+        "dividend": 65.0
+      },
+      "consensus_forecast": {
+        "sales": 343083.0,
+        "operating_income": 80618.0,
+        "ordinary_income": 81340.0,
+        "net_income": 58190.0,
+        "eps": 249.53,
+        "dividend": 65.0
+      }
+    }
+  }
+}

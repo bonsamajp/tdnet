@@ -1,0 +1,34 @@
+{
+  "code": "4540",
+  "company": "ツムラ",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 231000.0,
+        "operating_income": 39000.0,
+        "ordinary_income": 37000.0,
+        "net_income": 25800.0,
+        "eps": 346.09,
+        "dividend": 171.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 218500.0,
+        "operating_income": 38400.0,
+        "ordinary_income": 36400.0,
+        "net_income": 29300.0,
+        "eps": 393.03,
+        "dividend": 158.0
+      },
+      "consensus_forecast": {
+        "sales": 218000.0,
+        "operating_income": 38000.0,
+        "ordinary_income": 36000.0,
+        "net_income": 29000.0,
+        "eps": 389.02,
+        "dividend": 158.0
+      }
+    }
+  }
+}

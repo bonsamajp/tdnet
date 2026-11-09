@@ -1,0 +1,34 @@
+{
+  "code": "7261",
+  "company": "マツダ",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 5606001.0,
+        "operating_income": 170950.0,
+        "ordinary_income": 191510.0,
+        "net_income": 124606.0,
+        "eps": 197.45,
+        "dividend": 60.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 5500000.0,
+        "operating_income": 150000.0,
+        "ordinary_income": 140000.0,
+        "net_income": 90000.0,
+        "eps": 142.67,
+        "dividend": 55.0
+      },
+      "consensus_forecast": {
+        "sales": 5450941.0,
+        "operating_income": 143645.0,
+        "ordinary_income": 158028.0,
+        "net_income": 100334.0,
+        "eps": 158.99,
+        "dividend": 55.0
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "code": "7966",
+  "company": "リンテック",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 360940.0,
+        "operating_income": 37980.0,
+        "ordinary_income": 38200.0,
+        "net_income": 27320.0,
+        "eps": 455.01,
+        "dividend": 165.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 342000.0,
+        "operating_income": 27500.0,
+        "ordinary_income": 27500.0,
+        "net_income": 19500.0,
+        "eps": 297.79,
+        "dividend": 120.0
+      },
+      "consensus_forecast": {
+        "sales": 346460.0,
+        "operating_income": 30540.0,
+        "ordinary_income": 30780.0,
+        "net_income": 22140.0,
+        "eps": 368.74,
+        "dividend": 131.0
+      }
+    }
+  }
+}

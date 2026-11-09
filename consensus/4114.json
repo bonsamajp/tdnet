@@ -1,0 +1,34 @@
+{
+  "code": "4114",
+  "company": "日本触媒",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 461467.0,
+        "operating_income": 23233.0,
+        "ordinary_income": 29300.0,
+        "net_income": 22167.0,
+        "eps": 150.00,
+        "dividend": 155.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 455000.0,
+        "operating_income": 21000.0,
+        "ordinary_income": 27500.0,
+        "net_income": 20500.0,
+        "eps": 139.71,
+        "dividend": 140.0
+      },
+      "consensus_forecast": {
+        "sales": 445500.0,
+        "operating_income": 22867.0,
+        "ordinary_income": 28600.0,
+        "net_income": 21400.0,
+        "eps": 144.81,
+        "dividend": 146.0
+      }
+    }
+  }
+}

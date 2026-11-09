@@ -1,0 +1,32 @@
+{
+  "code": "7014",
+  "company": "名村造船所",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 184014.0,
+        "operating_income": 39544.0,
+        "net_income": 10460.0,
+        "eps": 150.41,
+        "dividend": 80.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 170000.0,
+        "operating_income": 29000.0,
+        "ordinary_income": 30000.0,
+        "net_income": 22000.0,
+        "eps": 316.83,
+        "dividend": 60.0
+      },
+      "consensus_forecast": {
+        "sales": 171744.0,
+        "operating_income": 33734.0,
+        "net_income": 9340.0,
+        "eps": 134.30,
+        "dividend": 65.0
+      }
+    }
+  }
+}

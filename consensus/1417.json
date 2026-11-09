@@ -1,0 +1,34 @@
+{
+  "code": "1417",
+  "company": "ミライト・ワン",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 666095.0,
+        "operating_income": 41625.0,
+        "ordinary_income": 42225.0,
+        "net_income": 27473.0,
+        "eps": 315.47,
+        "dividend": 105.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 660000.0,
+        "operating_income": 40000.0,
+        "ordinary_income": 40000.0,
+        "net_income": 25500.0,
+        "eps": 290.79,
+        "dividend": 95.0
+      },
+      "consensus_forecast": {
+        "sales": 642159.0,
+        "operating_income": 39000.0,
+        "ordinary_income": 39600.0,
+        "net_income": 25606.0,
+        "eps": 294.03,
+        "dividend": 95.0
+      }
+    }
+  }
+}

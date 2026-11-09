@@ -1,19 +1,33 @@
 {
   "code": "1803",
-  "company": "清水",
+  "company": "清水建設",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2319822.0,
+        "operating_income": 167167.0,
+        "ordinary_income": 167011.0,
+        "net_income": 134785.0,
+        "eps": 200.17,
+        "dividend": 86.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 2310000.0,
         "operating_income": 153000.0,
-        "ordinary_income": 148000.0,
-        "net_income": 130000.0
+        "ordinary_income": 183500.0,
+        "net_income": 165500.0,
+        "eps": 243.72,
+        "dividend": 77.0
       },
       "consensus_forecast": {
-        "sales": 2290871.0,
-        "operating_income": 154843.0,
-        "ordinary_income": 152829.0,
-        "net_income": 138929.0
+        "sales": 2289310.0,
+        "operating_income": 157070.0,
+        "ordinary_income": 187000.0,
+        "net_income": 169717.0,
+        "eps": 252.05,
+        "dividend": 86.0
       }
     }
   }
