@@ -1,0 +1,16 @@
+{
+  "code": "9306",
+  "company": "東陽倉庫",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 30500.0,
+        "operating_income": 1380.0,
+        "ordinary_income": 1700.0,
+        "net_income": 1150.0,
+        "eps": 152.96,
+        "dividend": 75.0
+      }
+    }
+  }
+}

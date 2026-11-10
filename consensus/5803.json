@@ -1,0 +1,34 @@
+{
+  "code": "5803",
+  "company": "フジクラ",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1917853.0,
+        "operating_income": 490921.0,
+        "ordinary_income": 514917.0,
+        "net_income": 376467.0,
+        "eps": 227.31,
+        "dividend": 92.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1755000.0,
+        "operating_income": 432000.0,
+        "ordinary_income": 453000.0,
+        "net_income": 326000.0,
+        "eps": 196.88,
+        "dividend": 38.0
+      },
+      "consensus_forecast": {
+        "sales": 1777915.0,
+        "operating_income": 451687.0,
+        "ordinary_income": 469913.0,
+        "net_income": 346362.0,
+        "eps": 209.13,
+        "dividend": 82.0
+      }
+    }
+  }
+}

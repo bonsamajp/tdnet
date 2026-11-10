@@ -1,0 +1,33 @@
+{
+  "code": "7832",
+  "company": "バンダイナムコホールディングス",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1547532.0,
+        "operating_income": 244974.0,
+        "ordinary_income": 254401.0,
+        "net_income": 174083.0,
+        "eps": 271.35,
+        "dividend": 110.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1350000.0,
+        "operating_income": 185000.0,
+        "ordinary_income": 190000.0,
+        "net_income": 130000.0,
+        "eps": 202.69
+      },
+      "consensus_forecast": {
+        "sales": 1457051.0,
+        "operating_income": 222851.0,
+        "ordinary_income": 232084.0,
+        "net_income": 159394.0,
+        "eps": 248.45,
+        "dividend": 101.0
+      }
+    }
+  }
+}

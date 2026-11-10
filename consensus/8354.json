@@ -1,0 +1,30 @@
+{
+  "code": "8354",
+  "company": "ふくおかフィナンシャルグループ",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 789200.0,
+        "ordinary_income": 189178.0,
+        "net_income": 130090.0,
+        "eps": 688.37,
+        "dividend": 273.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "ordinary_income": 149500.0,
+        "net_income": 100000.0,
+        "eps": 529.20,
+        "dividend": 210.0
+      },
+      "consensus_forecast": {
+        "sales": 747200.0,
+        "ordinary_income": 156866.0,
+        "net_income": 108365.0,
+        "eps": 573.41,
+        "dividend": 224.0
+      }
+    }
+  }
+}

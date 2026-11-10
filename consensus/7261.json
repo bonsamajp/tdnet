@@ -16,9 +16,9 @@
       "company_forecast": {
         "sales": 5500000.0,
         "operating_income": 150000.0,
-        "ordinary_income": 140000.0,
+        "ordinary_income": 160000.0,
         "net_income": 90000.0,
-        "eps": 142.67,
+        "eps": 142.61,
         "dividend": 55.0
       },
       "consensus_forecast": {

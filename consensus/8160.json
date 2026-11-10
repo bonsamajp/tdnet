@@ -1,0 +1,34 @@
+{
+  "code": "8160",
+  "company": "木曽路",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 56500.0,
+        "operating_income": 3300.0,
+        "ordinary_income": 3350.0,
+        "net_income": 2180.0,
+        "eps": 77.42,
+        "dividend": 30.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 55000.0,
+        "operating_income": 3200.0,
+        "ordinary_income": 3250.0,
+        "net_income": 2100.0,
+        "eps": 74.58,
+        "dividend": 30.0
+      },
+      "consensus_forecast": {
+        "sales": 55000.0,
+        "operating_income": 3200.0,
+        "ordinary_income": 3250.0,
+        "net_income": 2100.0,
+        "eps": 74.57,
+        "dividend": 30.0
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "code": "3105",
+  "company": "日清紡ホールディングス",
+  "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 548181.0,
+        "operating_income": 43061.0,
+        "ordinary_income": 46166.0,
+        "net_income": 31339.0,
+        "eps": 200.60,
+        "dividend": 61.0
+      }
+    },
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 511000.0,
+        "operating_income": 21000.0,
+        "ordinary_income": 21500.0,
+        "net_income": 14000.0,
+        "eps": 89.61,
+        "dividend": 36.0
+      },
+      "consensus_forecast": {
+        "sales": 528107.0,
+        "operating_income": 40265.0,
+        "ordinary_income": 43370.0,
+        "net_income": 31798.0,
+        "eps": 203.53,
+        "dividend": 59.0
+      }
+    }
+  }
+}

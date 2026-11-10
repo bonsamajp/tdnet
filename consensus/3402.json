@@ -1,0 +1,32 @@
+{
+  "code": "3402",
+  "company": "東レ",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2908606.0,
+        "operating_income": 180133.0,
+        "ordinary_income": 184670.0,
+        "net_income": 118849.0,
+        "eps": 81.58,
+        "dividend": 29.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2830000.0,
+        "net_income": 90000.0,
+        "eps": 61.80,
+        "dividend": 26.0
+      },
+      "consensus_forecast": {
+        "sales": 2806347.0,
+        "operating_income": 157574.0,
+        "ordinary_income": 161500.0,
+        "net_income": 102842.0,
+        "eps": 70.59,
+        "dividend": 26.0
+      }
+    }
+  }
+}

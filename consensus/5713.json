@@ -1,17 +1,30 @@
 {
   "code": "5713",
-  "company": "住友金属",
+  "company": "住友金属鉱山",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2058402.0,
+        "ordinary_income": 310400.0,
+        "net_income": 225961.0,
+        "eps": 841.59,
+        "dividend": 297.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "sales": 1883000.0,
-        "ordinary_income": 229000.0,
-        "net_income": 139000.0
+        "sales": 2065000.0,
+        "ordinary_income": 324000.0,
+        "net_income": 216000.0,
+        "eps": 803.95,
+        "dividend": 207.0
       },
       "consensus_forecast": {
-        "sales": 2038202.0,
-        "ordinary_income": 298358.0,
-        "net_income": 207411.0
+        "sales": 2135689.0,
+        "ordinary_income": 349729.0,
+        "net_income": 249050.0,
+        "eps": 927.59,
+        "dividend": 315.0
       }
     }
   }

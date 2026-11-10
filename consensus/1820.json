@@ -1,0 +1,34 @@
+{
+  "code": "1820",
+  "company": "西松建設",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 454460.0,
+        "operating_income": 32320.0,
+        "ordinary_income": 30580.0,
+        "net_income": 21760.0,
+        "eps": 551.11,
+        "dividend": 257.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 440000.0,
+        "operating_income": 30000.0,
+        "ordinary_income": 28000.0,
+        "net_income": 21500.0,
+        "eps": 544.5,
+        "dividend": 250.0
+      },
+      "consensus_forecast": {
+        "sales": 434620.0,
+        "operating_income": 30560.0,
+        "ordinary_income": 28880.0,
+        "net_income": 21380.0,
+        "eps": 541.48,
+        "dividend": 250.0
+      }
+    }
+  }
+}

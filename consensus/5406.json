@@ -2,18 +2,32 @@
   "code": "5406",
   "company": "神戸製鋼所",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2723597.0,
+        "operating_income": 153218.0,
+        "ordinary_income": 138346.0,
+        "net_income": 102384.0,
+        "eps": 257.22,
+        "dividend": 80.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "sales": 2560000.0,
+        "sales": 2690000.0,
         "operating_income": 150000.0,
         "ordinary_income": 120000.0,
-        "net_income": 100000.0
+        "net_income": 100000.0,
+        "eps": 252.09,
+        "dividend": 80.0
       },
       "consensus_forecast": {
-        "sales": 2570947.0,
-        "operating_income": 147714.0,
-        "ordinary_income": 125343.0,
-        "net_income": 101052.0
+        "sales": 2670922.0,
+        "operating_income": 146156.0,
+        "ordinary_income": 123671.0,
+        "net_income": 101101.0,
+        "eps": 253.99,
+        "dividend": 79.0
       }
     }
   }

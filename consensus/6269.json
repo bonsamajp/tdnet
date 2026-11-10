@@ -1,0 +1,34 @@
+{
+  "code": "6269",
+  "company": "三井海洋開発",
+  "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 720539.0,
+        "operating_income": 82466.0,
+        "ordinary_income": 89932.0,
+        "net_income": 63960.0,
+        "eps": 935.85,
+        "dividend": 237.0
+      }
+    },
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 720038.0,
+        "operating_income": 72003.0,
+        "ordinary_income": 78265.0,
+        "net_income": 57916.0,
+        "eps": 847.46,
+        "dividend": 200.0
+      },
+      "consensus_forecast": {
+        "sales": 723275.0,
+        "operating_income": 77994.0,
+        "ordinary_income": 86097.0,
+        "net_income": 61492.0,
+        "eps": 899.74,
+        "dividend": 213.0
+      }
+    }
+  }
+}

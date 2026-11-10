@@ -2,18 +2,32 @@
   "code": "7269",
   "company": "スズキ",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 7252003.0,
+        "operating_income": 648975.0,
+        "ordinary_income": 759409.0,
+        "net_income": 442072.0,
+        "eps": 229.13,
+        "dividend": 58.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "sales": 6800000.0,
-        "operating_income": 570000.0,
-        "ordinary_income": 660000.0,
-        "net_income": 380000.0
+        "sales": 6900000.0,
+        "operating_income": 540000.0,
+        "ordinary_income": 720000.0,
+        "net_income": 420000.0,
+        "eps": 217.69,
+        "dividend": 51.0
       },
       "consensus_forecast": {
-        "sales": 6797606.0,
-        "operating_income": 594426.0,
-        "ordinary_income": 691720.0,
-        "net_income": 396908.0
+        "sales": 6919465.0,
+        "operating_income": 583752.0,
+        "ordinary_income": 752646.0,
+        "net_income": 448429.0,
+        "eps": 232.42,
+        "dividend": 52.0
       }
     }
   }

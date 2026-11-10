@@ -1,0 +1,34 @@
+{
+  "code": "5233",
+  "company": "太平洋セメント",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1096340.0,
+        "operating_income": 93360.0,
+        "ordinary_income": 90240.0,
+        "net_income": 60880.0,
+        "eps": 558.63,
+        "dividend": 128.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1027000.0,
+        "operating_income": 76000.0,
+        "ordinary_income": 70000.0,
+        "net_income": 63000.0,
+        "eps": 575.14,
+        "dividend": 120.0
+      },
+      "consensus_forecast": {
+        "sales": 1006360.0,
+        "operating_income": 73640.0,
+        "ordinary_income": 69860.0,
+        "net_income": 60700.0,
+        "eps": 556.98,
+        "dividend": 120.0
+      }
+    }
+  }
+}

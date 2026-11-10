@@ -1,0 +1,34 @@
+{
+  "code": "1979",
+  "company": "大気社",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 329243.0,
+        "operating_income": 28456.0,
+        "ordinary_income": 29956.0,
+        "net_income": 20910.0,
+        "eps": 334.22,
+        "dividend": 126.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 307000.0,
+        "operating_income": 23800.0,
+        "ordinary_income": 25000.0,
+        "net_income": 18000.0,
+        "eps": 285.72,
+        "dividend": 119.0
+      },
+      "consensus_forecast": {
+        "sales": 307786.0,
+        "operating_income": 25870.0,
+        "ordinary_income": 27399.0,
+        "net_income": 19314.0,
+        "eps": 308.71,
+        "dividend": 119.0
+      }
+    }
+  }
+}

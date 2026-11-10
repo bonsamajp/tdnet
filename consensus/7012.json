@@ -1,0 +1,31 @@
+{
+  "code": "7012",
+  "company": "川崎重工業",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2736362.0,
+        "ordinary_income": 193785.0,
+        "net_income": 137462.0,
+        "eps": 157.42,
+        "dividend": 45.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2560000.0,
+        "ordinary_income": 157000.0,
+        "net_income": 115000.0,
+        "eps": 133.12,
+        "dividend": 40.0
+      },
+      "consensus_forecast": {
+        "sales": 2568325.0,
+        "ordinary_income": 170038.0,
+        "net_income": 121229.0,
+        "eps": 138.83,
+        "dividend": 39.0
+      }
+    }
+  }
+}
