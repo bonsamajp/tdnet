@@ -302,6 +302,10 @@ class Notifier:
                 m["_report"] = report
                 logger.info("業績比較レポート生成: %s", m.get("code", ""))
 
+        # 決算短信補足資料・株式報酬制度のお知らせ等が決算短信より先に
+        # TDnetへ並ぶことがあるため、レポート（決算短信等）を優先して通知する。
+        matches.sort(key=lambda m: 0 if m.get("_report") else 1)
+
         if self._enabled("desktop"):
             for m in matches:
                 title = f"TDnet: {m['company']}  [{m['matched_keyword']}]"
