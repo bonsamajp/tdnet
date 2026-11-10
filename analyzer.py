@@ -402,7 +402,7 @@ def _fmt_val(v: float | None, key: str) -> str:
 
 def _fmt_pct(pct: float | None, show_sign: bool = True) -> str:
     if pct is None:
-        return "    -  "
+        return "-"
     if show_sign:
         mark = "△" if pct >= 0 else "▼"
         return f"{mark}{abs(pct):.1f}%"
@@ -422,6 +422,14 @@ def _pad_label(s: str, width: int = 12) -> str:
     return s + " " * max(width - _disp_width(s), 0)
 
 
+def _rjust_disp(s: str, width: int) -> str:
+    """表示幅ベースで右詰めする。
+    見出し（全角のみ）と△▼記号を含む数値セルは、半角のみの数値セルと
+    文字数基準の:>N指定では表示幅が揃わないため、こちらを使う。
+    """
+    return " " * max(width - _disp_width(s), 0) + s
+
+
 # ---------------------------------------------------------------------------
 # 本決算レポート
 # ---------------------------------------------------------------------------
@@ -438,7 +446,7 @@ def build_report(match: dict, actuals: dict, consensus_data: dict, year: str) ->
         f"   {match.get('time', '')}  {match.get('title', '')[:40]}",
         f"   対象年度: {year}",
         "━" * 56,
-        f"{_pad_label('項目')} {'実績':>12} {'会社予想比':>10} {'コンセンサス比':>14}",
+        f"{_pad_label('項目')} {_rjust_disp('実績', 12)} {_rjust_disp('会社予想比', 10)} {_rjust_disp('コンセンサス比', 14)}",
         "─" * 56,
     ]
     for key in ITEM_KEYS:
@@ -446,7 +454,10 @@ def build_report(match: dict, actuals: dict, consensus_data: dict, year: str) ->
         actual  = actuals.get(key)
         c_pct   = _divergence(actual, company_fc.get(key))   if actual is not None else None
         n_pct   = _divergence(actual, consensus_fc.get(key)) if actual is not None else None
-        lines.append(f"{_pad_label(label)} {_fmt_val(actual, key):>12} {_fmt_pct(c_pct):>10} {_fmt_pct(n_pct):>14}")
+        lines.append(
+            f"{_pad_label(label)} {_fmt_val(actual, key):>12}"
+            f" {_rjust_disp(_fmt_pct(c_pct), 10)} {_rjust_disp(_fmt_pct(n_pct), 14)}"
+        )
 
     lines += ["─" * 56, f"PDF: {match.get('pdf_url', '-')}", "━" * 56]
     return "\n".join(lines)
@@ -470,9 +481,12 @@ def build_forecast_report(
         "━" * width,
     ]
     if show_prev:
-        lines.append(f"{_pad_label('項目')} {'会社予想':>12} {'前回予想比':>10} {'コンセンサス比':>14}")
+        lines.append(
+            f"{_pad_label('項目')} {_rjust_disp('会社予想', 12)}"
+            f" {_rjust_disp('前回予想比', 10)} {_rjust_disp('コンセンサス比', 14)}"
+        )
     else:
-        lines.append(f"{_pad_label('項目')} {'会社予想':>12} {'コンセンサス比':>14}")
+        lines.append(f"{_pad_label('項目')} {_rjust_disp('会社予想', 12)} {_rjust_disp('コンセンサス比', 14)}")
     lines.append("─" * width)
 
     for key in ITEM_KEYS:
@@ -482,10 +496,13 @@ def build_forecast_report(
             prev_val = previous_forecast.get(key)
             p_pct    = _divergence(fc_val, prev_val) if fc_val is not None and prev_val is not None else None
             lines.append(
-                f"{_pad_label(ITEM_LABELS[key])} {_fmt_val(fc_val, key):>12} {_fmt_pct(p_pct):>10} {_fmt_pct(n_pct):>14}"
+                f"{_pad_label(ITEM_LABELS[key])} {_fmt_val(fc_val, key):>12}"
+                f" {_rjust_disp(_fmt_pct(p_pct), 10)} {_rjust_disp(_fmt_pct(n_pct), 14)}"
             )
         else:
-            lines.append(f"{_pad_label(ITEM_LABELS[key])} {_fmt_val(fc_val, key):>12} {_fmt_pct(n_pct):>14}")
+            lines.append(
+                f"{_pad_label(ITEM_LABELS[key])} {_fmt_val(fc_val, key):>12} {_rjust_disp(_fmt_pct(n_pct), 14)}"
+            )
 
     lines += ["─" * width, "━" * width]
     return "\n".join(lines)
@@ -533,7 +550,8 @@ def build_quarterly_report(
         f"   {match.get('time', '')}  {match.get('title', '')[:45]}",
         f"   対象年度: {year}",
         "━" * 64,
-        f"{_pad_label('項目')} {qlabel+'累計':>10} {'前年同期比':>10} {'会予進捗':>9} {'コンセ進捗':>10}",
+        f"{_pad_label('項目')} {_rjust_disp(qlabel+'累計', 10)}"
+        f" {_rjust_disp('前年同期比', 10)} {_rjust_disp('会予進捗', 9)} {_rjust_disp('コンセ進捗', 10)}",
         "─" * 64,
     ]
     for key in ITEM_KEYS:
@@ -548,9 +566,9 @@ def build_quarterly_report(
 
         lines.append(
             f"{_pad_label(ITEM_LABELS[key])} {_fmt_val(actual, key):>10}"
-            f" {_fmt_pct(yoy_pct):>10}"
-            f" {_fmt_pct(c_prog, show_sign=False):>9}"
-            f" {_fmt_pct(n_prog, show_sign=False):>10}"
+            f" {_rjust_disp(_fmt_pct(yoy_pct), 10)}"
+            f" {_rjust_disp(_fmt_pct(c_prog, show_sign=False), 9)}"
+            f" {_rjust_disp(_fmt_pct(n_prog, show_sign=False), 10)}"
         )
 
     lines += ["─" * 64, f"PDF: {match.get('pdf_url', '-')}", "━" * 64]
@@ -605,7 +623,8 @@ def build_revision_report(
         f"   {match.get('time', '')}  {match.get('title', '')[:45]}",
         f"   対象年度: {year}",
         "━" * 62,
-        f"{_pad_label('項目')} {'修正後予想':>12} {'修正前予想':>12} {'修正率':>8} {'コンセンサス比':>14}",
+        f"{_pad_label('項目')} {_rjust_disp('修正後予想', 12)} {_rjust_disp('修正前予想', 12)}"
+        f" {_rjust_disp('修正率', 8)} {_rjust_disp('コンセンサス比', 14)}",
         "─" * 62,
     ]
     for key in ITEM_KEYS:
@@ -618,7 +637,7 @@ def build_revision_report(
 
         lines.append(
             f"{_pad_label(ITEM_LABELS[key])} {_fmt_val(rev, key):>12} {_fmt_val(prev, key):>12}"
-            f" {_fmt_pct(chg_pct):>8} {_fmt_pct(con_pct):>14}"
+            f" {_rjust_disp(_fmt_pct(chg_pct), 8)} {_rjust_disp(_fmt_pct(con_pct), 14)}"
         )
 
     lines += ["─" * 62, f"PDF: {match.get('pdf_url', '-')}", "━" * 62,
