@@ -43,6 +43,7 @@ ITEM_LABELS = {k: label for label, k in ITEMS}
 XBRL_TAG_MAP = {
     "sales": [
         "OperatingRevenuesIFRS",
+        "SalesIFRS",
         "NetSalesAndOperatingRevenues",
         "OperatingRevenues",
         "NetSales",
