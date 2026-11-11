@@ -1,17 +1,32 @@
 {
   "code": "8729",
-  "company": "ソニーフィナンシャル",
+  "company": "ソニーフィナンシャルグループ",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1030000.0,
+        "operating_income": 74400.0,
+        "ordinary_income": 96418.0,
+        "net_income": 62762.0,
+        "eps": 9.36,
+        "dividend": 9.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "sales": 1050000.0,
-        "ordinary_income": -20000.0,
-        "net_income": -16000.0
+        "sales": 1070000.0,
+        "operating_income": 29000.0,
+        "ordinary_income": 37000.0,
+        "net_income": 23000.0,
+        "dividend": 8.0
       },
       "consensus_forecast": {
-        "sales": 1055367.0,
-        "ordinary_income": -7929.0,
-        "net_income": -7032.0
+        "sales": 1020000.0,
+        "operating_income": 50700.0,
+        "ordinary_income": 42763.0,
+        "net_income": 20386.0,
+        "eps": 3.04,
+        "dividend": 8.0
       }
     }
   }

@@ -1,0 +1,34 @@
+{
+  "code": "9024",
+  "company": "西武ホールディングス",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 612125.0,
+        "operating_income": 74098.0,
+        "ordinary_income": 69589.0,
+        "net_income": 46591.0,
+        "eps": 183.22,
+        "dividend": 46.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 559000.0,
+        "operating_income": 53000.0,
+        "ordinary_income": 47000.0,
+        "net_income": 27000.0,
+        "eps": 106.22,
+        "dividend": 42.0
+      },
+      "consensus_forecast": {
+        "sales": 578952.0,
+        "operating_income": 57332.0,
+        "ordinary_income": 53009.0,
+        "net_income": 32106.0,
+        "eps": 126.26,
+        "dividend": 43.0
+      }
+    }
+  }
+}

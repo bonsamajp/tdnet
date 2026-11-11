@@ -1,0 +1,30 @@
+{
+  "code": "8358",
+  "company": "スルガ銀行",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 123500.0,
+        "ordinary_income": 52367.0,
+        "net_income": 40600.0,
+        "eps": 241.25,
+        "dividend": 77.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "ordinary_income": 56000.0,
+        "net_income": 44000.0,
+        "eps": 262.01,
+        "dividend": 80.0
+      },
+      "consensus_forecast": {
+        "sales": 117650.0,
+        "ordinary_income": 51533.0,
+        "net_income": 40000.0,
+        "eps": 237.68,
+        "dividend": 73.0
+      }
+    }
+  }
+}

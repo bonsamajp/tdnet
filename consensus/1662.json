@@ -1,0 +1,34 @@
+{
+  "code": "1662",
+  "company": "石油資源開発",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 407320.0,
+        "operating_income": 65840.0,
+        "ordinary_income": 68820.0,
+        "net_income": 51900.0,
+        "eps": 202.73,
+        "dividend": 62.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 314000.0,
+        "operating_income": 46000.0,
+        "ordinary_income": 46000.0,
+        "net_income": 65000.0,
+        "eps": 253.91,
+        "dividend": 45.0
+      },
+      "consensus_forecast": {
+        "sales": 373900.0,
+        "operating_income": 55980.0,
+        "ordinary_income": 58460.0,
+        "net_income": 73640.0,
+        "eps": 287.66,
+        "dividend": 54.0
+      }
+    }
+  }
+}

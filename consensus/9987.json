@@ -1,0 +1,34 @@
+{
+  "code": "9987",
+  "company": "スズケン",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2705800.0,
+        "operating_income": 36235.0,
+        "ordinary_income": 39085.0,
+        "net_income": 27498.0,
+        "eps": 206.18,
+        "dividend": 75.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2563000.0,
+        "operating_income": 31200.0,
+        "ordinary_income": 34300.0,
+        "net_income": 25000.0,
+        "eps": 184.81,
+        "dividend": 90.0
+      },
+      "consensus_forecast": {
+        "sales": 2598800.0,
+        "operating_income": 31597.0,
+        "ordinary_income": 34867.0,
+        "net_income": 26010.0,
+        "eps": 195.02,
+        "dividend": 60.0
+      }
+    }
+  }
+}

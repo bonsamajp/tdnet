@@ -7,7 +7,9 @@
         "sales": 16758.0,
         "operating_income": 1468.0,
         "ordinary_income": 1330.0,
-        "net_income": 895.0
+        "net_income": 895.0,
+        "eps": 77.51,
+        "dividend": 24.0
       }
     }
   }

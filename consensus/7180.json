@@ -1,0 +1,30 @@
+{
+  "code": "7180",
+  "company": "九州フィナンシャルグループ",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 306900.0,
+        "ordinary_income": 79600.0,
+        "net_income": 55400.0,
+        "eps": 131.85,
+        "dividend": 47.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "ordinary_income": 65000.0,
+        "net_income": 45000.0,
+        "eps": 104.56,
+        "dividend": 38.0
+      },
+      "consensus_forecast": {
+        "sales": 287500.0,
+        "ordinary_income": 65050.0,
+        "net_income": 45000.0,
+        "eps": 107.10,
+        "dividend": 38.0
+      }
+    }
+  }
+}

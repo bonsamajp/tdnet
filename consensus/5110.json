@@ -1,0 +1,33 @@
+{
+  "code": "5110",
+  "company": "住友ゴム工業",
+  "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 1360742.0,
+        "operating_income": 113570.0,
+        "ordinary_income": 112008.0,
+        "net_income": 72144.0,
+        "eps": 274.47,
+        "dividend": 107.0
+      }
+    },
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 1330000.0,
+        "operating_income": 89000.0,
+        "net_income": 55000.0,
+        "eps": 209.25,
+        "dividend": 84.0
+      },
+      "consensus_forecast": {
+        "sales": 1300133.0,
+        "operating_income": 90138.0,
+        "ordinary_income": 88034.0,
+        "net_income": 56553.0,
+        "eps": 215.16,
+        "dividend": 87.0
+      }
+    }
+  }
+}

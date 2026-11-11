@@ -2,18 +2,32 @@
   "code": "4631",
   "company": "DIC",
   "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 1155533.0,
+        "operating_income": 68467.0,
+        "ordinary_income": 60733.0,
+        "net_income": 57800.0,
+        "eps": 613.02,
+        "dividend": 160.0
+      }
+    },
     "2026年12月": {
       "company_forecast": {
-        "sales": 1100000.0,
-        "operating_income": 56000.0,
-        "ordinary_income": 48000.0,
-        "net_income": 33000.0
+        "sales": 1140000.0,
+        "operating_income": 78000.0,
+        "ordinary_income": 73000.0,
+        "net_income": 48000.0,
+        "eps": 507.99,
+        "dividend": 150.0
       },
       "consensus_forecast": {
-        "sales": 1128167.0,
-        "operating_income": 62667.0,
-        "ordinary_income": 55600.0,
-        "net_income": 38167.0
+        "sales": 1144800.0,
+        "operating_income": 72467.0,
+        "ordinary_income": 67500.0,
+        "net_income": 45200.0,
+        "eps": 479.39,
+        "dividend": 167.0
       }
     }
   }

@@ -1,0 +1,34 @@
+{
+  "code": "6055",
+  "company": "ジャパンマテリアル",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 77720.0,
+        "operating_income": 21641.0,
+        "ordinary_income": 21252.0,
+        "net_income": 15074.0,
+        "eps": 146.64,
+        "dividend": 41.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 61000.0,
+        "operating_income": 15500.0,
+        "ordinary_income": 15500.0,
+        "net_income": 10800.0,
+        "eps": 105.08,
+        "dividend": 35.0
+      },
+      "consensus_forecast": {
+        "sales": 65038.0,
+        "operating_income": 17541.0,
+        "ordinary_income": 17803.0,
+        "net_income": 12328.0,
+        "eps": 119.93,
+        "dividend": 35.0
+      }
+    }
+  }
+}

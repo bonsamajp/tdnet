@@ -1,0 +1,32 @@
+{
+  "code": "5108",
+  "company": "ブリヂストン",
+  "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 4830366.0,
+        "operating_income": 561189.0,
+        "ordinary_income": 548249.0,
+        "net_income": 389071.0,
+        "eps": 315.26,
+        "dividend": 152.0
+      }
+    },
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 4500000.0,
+        "net_income": 340000.0,
+        "eps": 270.87,
+        "dividend": 125.0
+      },
+      "consensus_forecast": {
+        "sales": 4694188.0,
+        "operating_income": 518019.0,
+        "ordinary_income": 504975.0,
+        "net_income": 359746.0,
+        "eps": 291.50,
+        "dividend": 134.0
+      }
+    }
+  }
+}

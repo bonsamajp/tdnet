@@ -1,0 +1,34 @@
+{
+  "code": "1605",
+  "company": "INPEX",
+  "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 2177363.0,
+        "operating_income": 1278238.0,
+        "ordinary_income": 1332975.0,
+        "net_income": 482250.0,
+        "eps": 419.50,
+        "dividend": 119.0
+      }
+    },
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 1973000.0,
+        "operating_income": 1223000.0,
+        "ordinary_income": 1278000.0,
+        "net_income": 510000.0,
+        "eps": 438.82,
+        "dividend": 112.0
+      },
+      "consensus_forecast": {
+        "sales": 2204838.0,
+        "operating_income": 1391913.0,
+        "ordinary_income": 1450813.0,
+        "net_income": 525063.0,
+        "eps": 456.74,
+        "dividend": 113.0
+      }
+    }
+  }
+}
