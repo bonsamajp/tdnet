@@ -2,18 +2,32 @@
   "code": "4183",
   "company": "三井化学",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1930200.0,
+        "operating_income": 125042.0,
+        "ordinary_income": 116745.0,
+        "net_income": 68933.0,
+        "eps": 190.66,
+        "dividend": 82.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 1900000.0,
         "operating_income": 83000.0,
         "ordinary_income": 74000.0,
-        "net_income": 45000.0
+        "net_income": 45000.0,
+        "eps": 124.48,
+        "dividend": 75.0
       },
       "consensus_forecast": {
-        "sales": 1891575.0,
-        "operating_income": 91867.0,
-        "ordinary_income": 82667.0,
-        "net_income": 48267.0
+        "sales": 1916575.0,
+        "operating_income": 106358.0,
+        "ordinary_income": 97927.0,
+        "net_income": 56658.0,
+        "eps": 156.71,
+        "dividend": 75.0
       }
     }
   }

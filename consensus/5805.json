@@ -1,0 +1,34 @@
+{
+  "code": "5805",
+  "company": "SWCC",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 356114.0,
+        "operating_income": 39100.0,
+        "ordinary_income": 38498.0,
+        "net_income": 25970.0,
+        "eps": 175.27,
+        "dividend": 74.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 330000.0,
+        "operating_income": 33000.0,
+        "ordinary_income": 32200.0,
+        "net_income": 23000.0,
+        "eps": 776.43,
+        "dividend": 174.0
+      },
+      "consensus_forecast": {
+        "sales": 335862.0,
+        "operating_income": 35042.0,
+        "ordinary_income": 34516.0,
+        "net_income": 23524.0,
+        "eps": 158.76,
+        "dividend": 66.0
+      }
+    }
+  }
+}

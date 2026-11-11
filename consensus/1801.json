@@ -1,0 +1,34 @@
+{
+  "code": "1801",
+  "company": "大成建設",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 2494489.0,
+        "operating_income": 212406.0,
+        "ordinary_income": 215733.0,
+        "net_income": 161561.0,
+        "eps": 991.12,
+        "dividend": 417.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 2420000.0,
+        "operating_income": 188000.0,
+        "ordinary_income": 187000.0,
+        "net_income": 151000.0,
+        "eps": 926.33,
+        "dividend": 380.0
+      },
+      "consensus_forecast": {
+        "sales": 2418533.0,
+        "operating_income": 195956.0,
+        "ordinary_income": 199478.0,
+        "net_income": 165856.0,
+        "eps": 1017.46,
+        "dividend": 387.0
+      }
+    }
+  }
+}

@@ -1,19 +1,33 @@
 {
   "code": "1812",
-  "company": "鹿島",
+  "company": "鹿島建設",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 3192356.0,
+        "operating_income": 253722.0,
+        "ordinary_income": 264467.0,
+        "net_income": 198622.0,
+        "eps": 432.28,
+        "dividend": 176.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 2900000.0,
         "operating_income": 200000.0,
         "ordinary_income": 206000.0,
-        "net_income": 170000.0
+        "net_income": 170000.0,
+        "eps": 368.20,
+        "dividend": 146.0
       },
       "consensus_forecast": {
-        "sales": 2953743.0,
-        "operating_income": 216800.0,
-        "ordinary_income": 225057.0,
-        "net_income": 184429.0
+        "sales": 2966133.0,
+        "operating_income": 217456.0,
+        "ordinary_income": 226433.0,
+        "net_income": 185467.0,
+        "eps": 403.65,
+        "dividend": 159.0
       }
     }
   }

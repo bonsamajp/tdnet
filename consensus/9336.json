@@ -1,0 +1,34 @@
+{
+  "code": "9336",
+  "company": "大栄環境",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 101643.0,
+        "operating_income": 26705.0,
+        "ordinary_income": 26070.0,
+        "net_income": 17963.0,
+        "eps": 179.86,
+        "dividend": 59.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 93900.0,
+        "operating_income": 24300.0,
+        "ordinary_income": 23100.0,
+        "net_income": 16400.0,
+        "eps": 164.25,
+        "dividend": 55.0
+      },
+      "consensus_forecast": {
+        "sales": 96105.0,
+        "operating_income": 24810.0,
+        "ordinary_income": 24168.0,
+        "net_income": 16803.0,
+        "eps": 168.24,
+        "dividend": 56.0
+      }
+    }
+  }
+}

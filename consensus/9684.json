@@ -1,19 +1,33 @@
 {
   "code": "9684",
-  "company": "スクウェア",
+  "company": "スクウェア・エニックス・ホールディングス",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 339591.0,
+        "operating_income": 62523.0,
+        "ordinary_income": 64024.0,
+        "net_income": 42967.0,
+        "eps": 119.13,
+        "dividend": 53.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
         "sales": 298000.0,
         "operating_income": 49000.0,
         "ordinary_income": 49000.0,
-        "net_income": 31000.0
+        "net_income": 31000.0,
+        "eps": 85.99,
+        "dividend": 43.0
       },
       "consensus_forecast": {
-        "sales": 301866.0,
-        "operating_income": 51429.0,
-        "ordinary_income": 52818.0,
-        "net_income": 35176.0
+        "sales": 315413.0,
+        "operating_income": 57947.0,
+        "ordinary_income": 59881.0,
+        "net_income": 39509.0,
+        "eps": 109.54,
+        "dividend": 51.0
       }
     }
   }

@@ -1,0 +1,34 @@
+{
+  "code": "5020",
+  "company": "ENEOSホールディングス",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 12198183.0,
+        "operating_income": 521167.0,
+        "ordinary_income": 501633.0,
+        "net_income": 331283.0,
+        "eps": 125.00,
+        "dividend": 43.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 12850000.0,
+        "operating_income": 610000.0,
+        "ordinary_income": 590000.0,
+        "net_income": 415000.0,
+        "eps": 155.72,
+        "dividend": 34.0
+      },
+      "consensus_forecast": {
+        "sales": 13153217.0,
+        "operating_income": 641117.0,
+        "ordinary_income": 621600.0,
+        "net_income": 441083.0,
+        "eps": 166.43,
+        "dividend": 39.0
+      }
+    }
+  }
+}

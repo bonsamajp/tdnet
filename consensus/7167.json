@@ -1,16 +1,29 @@
 {
   "code": "7167",
-  "company": "めぶき",
+  "company": "めぶきフィナンシャルグループ",
   "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 597950.0,
+        "ordinary_income": 186475.0,
+        "net_income": 128040.0,
+        "eps": 136.39,
+        "dividend": 55.0
+      }
+    },
     "2027年03月": {
       "company_forecast": {
-        "ordinary_income": 139000.0,
-        "net_income": 95000.0
+        "ordinary_income": 153500.0,
+        "net_income": 105000.0,
+        "eps": 111.87,
+        "dividend": 44.0
       },
       "consensus_forecast": {
-        "sales": 484500.0,
-        "ordinary_income": 152600.0,
-        "net_income": 103933.0
+        "sales": 516400.0,
+        "ordinary_income": 157075.0,
+        "net_income": 109960.0,
+        "eps": 117.13,
+        "dividend": 46.0
       }
     }
   }

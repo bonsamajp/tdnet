@@ -1,0 +1,34 @@
+{
+  "code": "9147",
+  "company": "NIPPON EXPRESSホールディングス",
+  "years": {
+    "2027年12月": {
+      "consensus_forecast": {
+        "sales": 2866948.0,
+        "operating_income": 189657.0,
+        "ordinary_income": 183013.0,
+        "net_income": 122216.0,
+        "eps": 520.64,
+        "dividend": 111.0
+      }
+    },
+    "2026年12月": {
+      "company_forecast": {
+        "sales": 2750000.0,
+        "operating_income": 120000.0,
+        "ordinary_income": 105000.0,
+        "net_income": 70000.0,
+        "eps": 289.50,
+        "dividend": 100.0
+      },
+      "consensus_forecast": {
+        "sales": 2756229.0,
+        "operating_income": 121450.0,
+        "ordinary_income": 109145.0,
+        "net_income": 72670.0,
+        "eps": 309.58,
+        "dividend": 101.0
+      }
+    }
+  }
+}

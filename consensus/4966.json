@@ -1,0 +1,34 @@
+{
+  "code": "4966",
+  "company": "上村工業",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 118213.0,
+        "operating_income": 28937.0,
+        "ordinary_income": 29590.0,
+        "net_income": 20557.0,
+        "eps": 1287.65,
+        "dividend": 347.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 95840.0,
+        "operating_income": 20330.0,
+        "ordinary_income": 20890.0,
+        "net_income": 14530.0,
+        "eps": 900.48,
+        "dividend": 290.0
+      },
+      "consensus_forecast": {
+        "sales": 109177.0,
+        "operating_income": 24850.0,
+        "ordinary_income": 25567.0,
+        "net_income": 17817.0,
+        "eps": 1116.02,
+        "dividend": 313.0
+      }
+    }
+  }
+}

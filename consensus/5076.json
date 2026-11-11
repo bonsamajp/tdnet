@@ -1,0 +1,34 @@
+{
+  "code": "5076",
+  "company": "インフロニア・ホールディングス",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 1527790.0,
+        "operating_income": 95542.0,
+        "ordinary_income": 101250.0,
+        "net_income": 69145.0,
+        "eps": 273.17,
+        "dividend": 106.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 1445000.0,
+        "operating_income": 84500.0,
+        "ordinary_income": 122400.0,
+        "net_income": 85500.0,
+        "eps": 329.00,
+        "dividend": 132.0
+      },
+      "consensus_forecast": {
+        "sales": 1357971.0,
+        "operating_income": 86200.0,
+        "ordinary_income": 116000.0,
+        "net_income": 78859.0,
+        "eps": 311.54,
+        "dividend": 119.0
+      }
+    }
+  }
+}

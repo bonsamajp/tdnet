@@ -1,0 +1,31 @@
+{
+  "code": "5019",
+  "company": "出光興産",
+  "years": {
+    "2028年03月": {
+      "consensus_forecast": {
+        "sales": 8968650.0,
+        "operating_income": 228750.0,
+        "ordinary_income": 238288.0,
+        "net_income": 179367.0,
+        "eps": 149.65,
+        "dividend": 46.0
+      }
+    },
+    "2027年03月": {
+      "company_forecast": {
+        "net_income": 75000.0,
+        "eps": 62.00,
+        "dividend": 36.0
+      },
+      "consensus_forecast": {
+        "sales": 9706000.0,
+        "operating_income": 272200.0,
+        "ordinary_income": 220994.0,
+        "net_income": 203700.0,
+        "eps": 169.95,
+        "dividend": 42.0
+      }
+    }
+  }
+}

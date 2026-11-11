@@ -1,0 +1,15 @@
+{
+  "code": "7326",
+  "company": "SBIインシュアランスグループ",
+  "years": {
+    "2027年03月": {
+      "company_forecast": {
+        "sales": 150000.0,
+        "ordinary_income": 16000.0,
+        "net_income": 3620.0,
+        "eps": 145.85,
+        "dividend": 59.0
+      }
+    }
+  }
+}
